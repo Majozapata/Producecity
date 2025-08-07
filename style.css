@@ -1,0 +1,187 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
+  color: #111;
+}
+
+header {
+  background-color: #111812;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  height: 100px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+.promotions {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+}
+
+.promotions img {
+  max-width: 90%;
+  margin: 15px auto;
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact {
+  padding: 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: blue;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  background: #eee;
+  padding: 20px;
+}
+
+footer img {
+  height: 30px;
+  margin: 0 5px;
+}
+
+
+/*diseño de celular*/
+
+/* style.css */
+
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Global === */
+body {
+  font-family: Arial, sans-serif;
+  background: #fefefe;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* === Header === */
+header {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+/* === Promotions Section === */
+.promotions {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.promotions img {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* === Contact Section === */
+.contact {
+  padding: 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  background: #eee;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+footer img {
+  height: 30px;
+  margin: 5px;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .promotions {
+    padding: 10px;
+  }
+
+  .contact p {
+    font-size: 0.95em;
+  }
+
+  footer {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7em;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  .contact h2 {
+    font-size: 1.3em;
+  }
+
+  footer img {
+    height: 24px;
+  }
+}
+
