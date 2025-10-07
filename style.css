@@ -1,187 +1,119 @@
-/* style.css */
-
+/* 🔹 Estilos generales */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #fefefe;
-  color: #111;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #333;
 }
 
-header {
-  background-color: #111812;
+/* 🔹 Barra superior */
+.top-bar {
+  background-color: #2e2e2e;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+/* 🔹 Encabezado principal */
+.main-header {
+  background-color: #000;
   color: white;
-  text-align: center;
-  padding: 20px;
+  padding: 15px 0;
 }
 
-.logo {
-  height: 100px;
-}
-
-h1 {
-  font-size: 2.5em;
-  margin: 10px 0;
-}
-
-.promotions {
-  text-align: center;
-  padding: 20px;
-  background: #fff;
-}
-
-.promotions img {
-  max-width: 90%;
-  margin: 15px auto;
-  display: block;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-}
-
-.contact {
-  padding: 20px;
-  background: #f4f4f4;
-  text-align: center;
-}
-
-.contact h2 {
-  margin-bottom: 10px;
-}
-
-.contact a {
-  color: blue;
-  text-decoration: none;
-}
-
-footer {
-  text-align: center;
-  background: #eee;
-  padding: 20px;
-}
-
-footer img {
-  height: 30px;
-  margin: 0 5px;
-}
-
-
-/*diseño de celular*/
-
-/* style.css */
-
-/* === Reset === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* === Global === */
-body {
-  font-family: Arial, sans-serif;
-  background: #fefefe;
-  color: #111;
-  line-height: 1.6;
-}
-
-/* === Header === */
-header {
-  background-color: #111;
-  color: white;
-  text-align: center;
-  padding: 20px;
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
 }
 
 .logo {
   height: 60px;
-  margin-bottom: 10px;
 }
 
-h1 {
-  font-size: 2.5em;
-}
-
-/* === Promotions Section === */
-.promotions {
-  padding: 20px;
+.nav-menu ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
   gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #a8c84a;
+}
+
+/* 🔹 Banner */
+.banner {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* 🔹 Promociones */
+.promotions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  padding: 30px;
+  justify-items: center;
 }
 
 .promotions img {
   width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
-  display: block;
+  max-width: 350px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
-/* === Contact Section === */
+.promotions img:hover {
+  transform: scale(1.03);
+}
+
+/* 🔹 Sección de contacto */
 .contact {
-  padding: 20px;
-  background: #f4f4f4;
+  background-color: #f8f8f8;
+  padding: 40px;
   text-align: center;
 }
 
 .contact h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 .contact a {
-  color: #007BFF;
+  color: #0066cc;
   text-decoration: none;
 }
 
-/* === Footer === */
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* 🔹 Footer */
 footer {
+  background-color: #000;
+  color: #fff;
   text-align: center;
-  background: #eee;
-  padding: 20px;
-  font-size: 0.9em;
+  padding: 20px 0;
 }
 
 footer img {
   height: 30px;
-  margin: 5px;
+  margin: 10px;
 }
-
-/* === Responsive Design === */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2em;
-  }
-
-  .promotions {
-    padding: 10px;
-  }
-
-  .contact p {
-    font-size: 0.95em;
-  }
-
-  footer {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.7em;
-  }
-
-  .logo {
-    height: 45px;
-  }
-
-  .contact h2 {
-    font-size: 1.3em;
-  }
-
-  footer img {
-    height: 24px;
-  }
-}
-
