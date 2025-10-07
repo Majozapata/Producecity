@@ -1,116 +1,117 @@
-/* 🔹 General */
-body {
+/* Reset */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* 🔹 Header */
-.top-header {
-  width: 100%;
-  background-color: #000;
-  color: white;
-  font-size: 14px;
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
 }
 
-/* Parte superior del header (contacto) */
-.header-top {
+/* HEADER */
+header {
+  background-color: #1a5d3a; /* Verde oscuro natural */
+  color: #fff;
+  padding: 20px;
+}
+
+.header-container {
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  background-color: #3a3a3a;
-  padding: 10px 0;
-}
-
-.contact-info span {
-  margin: 0 10px;
-}
-
-/* Parte principal del header */
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background-color: #000;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
 }
 
 .logo {
-  height: 60px;
+  width: 100px;
+  height: auto;
 }
 
-.menu-links a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-weight: 500;
+.header-info h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
-.menu-links a:hover {
-  color: #d4af37; /* dorado */
+.header-info p {
+  font-size: 1rem;
 }
 
-/* 🔹 Banner */
-.banner {
-  background-color: #111;
-  color: white;
-  text-align: center;
-  padding: 40px 0;
-  font-size: 1.6em;
-  font-weight: bold;
-}
-
-/* 🔹 Promociones */
+/* PROMOTIONS */
 .promotions {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 30px;
-  justify-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  justify-content: flex-start;
 }
 
 .promotions img {
-  width: 100%;
-  max-width: 350px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
   transition: transform 0.3s ease;
 }
 
 .promotions img:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
-/* 🔹 Contacto */
-.contact {
-  background-color: #f8f8f8;
-  padding: 40px;
-  text-align: center;
-}
-
-.contact h2 {
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.contact a {
-  color: #0078d7;
-  text-decoration: none;
-}
-
-.contact a:hover {
-  text-decoration: underline;
-}
-
-/* 🔹 Footer */
+/* FOOTER */
 footer {
-  background-color: #000;
+  background-color: #1a5d3a;
   color: #fff;
   text-align: center;
-  padding: 25px 0;
+  padding: 20px;
 }
 
 footer img {
-  height: 30px;
-  margin: 10px;
+  width: 60px;
+  margin: 5px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .header-info h1 {
+    font-size: 1.5rem;
+  }
+  .promotions img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .logo {
+    width: 80px;
+  }
+  .promotions img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+  }
+  .header-info h1 {
+    font-size: 1.3rem;
+  }
+  .header-info p {
+    font-size: 0.9rem;
+  }
+  .promotions img {
+    width: 150px;
+  }
 }
