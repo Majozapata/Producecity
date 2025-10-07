@@ -1,56 +1,53 @@
-/* 🔹 Estilos generales */
+/* 🔹 General */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #fff;
+  font-family: Arial, sans-serif;
   color: #333;
 }
 
-/* 🔹 Barra superior */
-.top-bar {
-  background-color: #2e2e2e;
-  color: #fff;
-  text-align: center;
-  padding: 8px 0;
+/* 🔹 Header */
+.top-header {
+  width: 100%;
+  background-color: #000;
+  color: white;
   font-size: 14px;
 }
 
-/* 🔹 Encabezado principal */
-.main-header {
-  background-color: #000;
-  color: white;
-  padding: 15px 0;
+/* Parte superior del header (contacto) */
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3a3a;
+  padding: 10px 0;
 }
 
-.header-content {
+.contact-info span {
+  margin: 0 10px;
+}
+
+/* Parte principal del header */
+.main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin: auto;
+  padding: 15px 30px;
+  background-color: #000;
 }
 
 .logo {
   height: 60px;
 }
 
-.nav-menu ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-menu a {
+.menu-links a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  margin-left: 20px;
+  font-weight: 500;
 }
 
-.nav-menu a:hover {
-  color: #a8c84a;
+.menu-links a:hover {
+  color: #d4af37; /* dorado */
 }
 
 /* 🔹 Banner */
@@ -59,7 +56,7 @@ body {
   color: white;
   text-align: center;
   padding: 40px 0;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: bold;
 }
 
@@ -67,7 +64,7 @@ body {
 .promotions {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 15px;
+  gap: 20px;
   padding: 30px;
   justify-items: center;
 }
@@ -84,7 +81,7 @@ body {
   transform: scale(1.03);
 }
 
-/* 🔹 Sección de contacto */
+/* 🔹 Contacto */
 .contact {
   background-color: #f8f8f8;
   padding: 40px;
@@ -97,7 +94,7 @@ body {
 }
 
 .contact a {
-  color: #0066cc;
+  color: #0078d7;
   text-decoration: none;
 }
 
@@ -110,7 +107,7 @@ footer {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 20px 0;
+  padding: 25px 0;
 }
 
 footer img {
