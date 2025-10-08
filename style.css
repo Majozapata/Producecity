@@ -5,37 +5,35 @@
   box-sizing: border-box;
 }
 
-/* BODY */
+/* GENERAL BODY */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #222;
-  line-height: 1.6;
 }
 
-/* ===== HEADER ===== */
-.main-header {
-  background-color: #1a5d3a; /* Verde oscuro */
+/* CONTACT BAR */
+.contact-bar {
+  background-color: #555;
   color: white;
-  width: 100%;
-}
-
-/* Top bar (contact info) */
-.top-bar {
-  background-color: #333;
-  color: #f1f1f1;
   text-align: center;
-  padding: 8px 0;
   font-size: 0.9rem;
+  padding: 8px 0;
 }
 
-/* Nav bar */
-.nav-bar {
+/* HEADER */
+.header {
+  background-color: #114b2c; /* Verde más oscuro */
+  color: white;
+  padding: 20px 40px;
+}
+
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 50px;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .logo {
@@ -43,23 +41,27 @@ body {
   height: auto;
 }
 
-.title {
+.site-title {
+  flex: 1;
+  text-align: center;
   font-size: 1.8rem;
   font-weight: 700;
   color: #f1c232; /* Dorado */
-  text-align: center;
-  flex: 1;
 }
 
 .shop-now {
-  background-color: #f1c232; /* Dorado */
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f1c232;
   color: #1a1a1a;
   border: none;
-  padding: 10px 25px;
+  padding: 10px 20px;
   border-radius: 25px;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease;
+  margin: 10px 40px;
 }
 
 .shop-now:hover {
@@ -67,37 +69,41 @@ body {
   transform: scale(1.05);
 }
 
-/* ===== PROMOTIONS ===== */
+/* PROMOTIONS - Vertical display */
 .promotions {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 25px;
   padding: 40px 20px;
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
 }
 
 .promotions img {
-  width: 340px;
-  height: auto;
+  width: 90%;
+  max-width: 800px;
   border-radius: 10px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
 .promotions img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
-  background-color: #1a5d3a;
+  background-color: #114b2c;
   color: white;
   text-align: center;
   padding-top: 20px;
 }
 
-.payment img {
+.pay-text {
+  font-size: 1rem;
+}
+
+.payment-icons img {
   width: 60px;
   margin: 10px;
 }
@@ -116,57 +122,59 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* RESPONSIVE DESIGN */
 
-/* Tablets (768px o menos) */
+/* Tablet */
 @media (max-width: 1024px) {
-  .nav-bar {
-    padding: 15px 20px;
-    gap: 10px;
-  }
-
-  .title {
+  .site-title {
     font-size: 1.5rem;
   }
 
+  .shop-now {
+    margin: 10px 20px;
+  }
+
   .promotions img {
-    width: 280px;
+    max-width: 90%;
   }
 }
 
-/* Celulares medianos */
+/* Mobile */
 @media (max-width: 768px) {
-  .nav-bar {
+  .header-container {
     flex-direction: column;
     text-align: center;
   }
 
-  .logo {
-    width: 80px;
+  .shop-now {
+    position: relative;
+    margin: 15px auto;
   }
 
-  .shop-now {
-    margin-top: 10px;
-    padding: 8px 20px;
+  .site-title {
+    margin: 10px 0;
   }
 
   .promotions img {
-    width: 230px;
+    width: 95%;
+  }
+
+  .contact-bar {
+    font-size: 0.8rem;
   }
 }
 
-/* Celulares pequeños */
+/* Small Mobile */
 @media (max-width: 480px) {
-  .top-bar {
-    font-size: 0.8rem;
-    padding: 6px 0;
+  .site-title {
+    font-size: 1.3rem;
   }
 
-  .title {
-    font-size: 1.2rem;
+  .shop-now {
+    padding: 8px 15px;
   }
 
   .promotions img {
-    width: 190px;
+    width: 100%;
   }
 }
