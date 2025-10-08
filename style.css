@@ -5,107 +5,124 @@
   box-sizing: border-box;
 }
 
-/* GENERAL */
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
+  color: #111;
   background-color: #fff;
-  color: #222;
   overflow-x: hidden;
 }
 
-/* FRANJA GRIS SUPERIOR */
+/* CONTACT BAR */
 .contact-bar {
-  background-color: #555555;
+  background-color: #555;
   color: white;
   text-align: center;
   font-size: 1rem;
-  padding: 8px 0;
+  padding: 10px 0;
 }
 
 /* HEADER */
 .header {
-  background-color: #0d2a1b; /* Verde oscuro casi negro */
+  background-color: #0b1c0b; /* Verde oscuro casi negro */
   color: white;
-  padding: 25px 50px;
-  width: 100%;
+  padding: 25px 40px;
 }
 
-.header-inner {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   position: relative;
 }
 
 .logo {
-  width: 150px;
+  width: 130px;
   height: auto;
 }
 
-.title {
+.site-title {
   flex: 1;
   text-align: center;
   font-size: 2rem;
-  font-weight: 800;
-  color: white;
+  font-weight: bold;
 }
 
 .shop-now {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: #f1c232; /* Dorado */
-  color: #1a1a1a;
+  background-color: #d4af37; /* Dorado */
+  color: #0b1c0b;
   border: none;
-  padding: 10px 25px;
-  border-radius: 25px;
+  padding: 15px 30px;
+  border-radius: 30px;
   cursor: pointer;
-  font-weight: 800;
-  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: bold;
   margin: 15px 40px;
+  transition: all 0.3s ease;
 }
 
 .shop-now:hover {
-  background-color: #d4a017;
+  background-color: #b18d2c;
   transform: scale(1.05);
 }
 
-/* PROMOTIONS (una sola visible por pantalla) */
+/* PROMOTIONS */
 .promotions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-  padding: 40px 0;
-  background-color: #ffffff;
+  width: 100%;
+  scroll-behavior: smooth;
 }
 
-.promotions img {
-  width: 95%;
-  max-width: 900px;
+.promo {
+  height: 100vh; /* Ocupa toda la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.promo img {
+  width: 80%;
+  max-width: 800px;
   border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
-.promotions img:hover {
-  transform: scale(1.02);
+.promo img:hover {
+  transform: scale(1.03);
 }
 
 /* FOOTER */
 footer {
-  background-color: #0d2a1b;
-  color: white;
+  background-color: #fff;
+  color: #000;
   text-align: center;
-  padding-top: 20px;
+  font-size: 1.1rem;
 }
 
-.pay-text {
+.footer-gray {
+  background-color: #555;
+  color: #fff;
+  padding: 20px;
   font-size: 1rem;
 }
 
+.pay-text {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .payment-icons img {
-  width: 60px;
+  width: 70px;
   margin: 10px;
 }
 
@@ -118,36 +135,35 @@ footer {
 }
 
 .copy {
-  background-color: #ffffff;
+  background-color: #eee;
   padding: 10px;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  color: #333;
 }
 
 /* RESPONSIVE DESIGN */
+
+/* Tablet */
 @media (max-width: 1024px) {
-  .title {
-    font-size: 1.5rem;
+  .logo {
+    width: 110px;
   }
+
+  .site-title {
+    font-size: 1.7rem;
+  }
+
   .shop-now {
-    margin: 10px 20px;
-  }
-  .promotions img {
-    max-width: 90%;
+    padding: 12px 25px;
+    font-size: 1rem;
   }
 }
 
+/* Mobile */
 @media (max-width: 768px) {
-  .header-inner {
+  .header-container {
     flex-direction: column;
-  }
-
-  .logo {
-    width: 80px;
-  }
-
-  .title {
-    font-size: 1.5rem;
-    margin-top: 10px;
+    text-align: center;
   }
 
   .shop-now {
@@ -155,21 +171,27 @@ footer {
     margin: 15px auto;
   }
 
-  .promotions img {
-    width: 90%;
+  .promo img {
+    width: 95%;
   }
 
   .contact-bar {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
+/* Small Mobile */
 @media (max-width: 480px) {
-  .title {
-    font-size: 1.3rem;
+  .site-title {
+    font-size: 1.4rem;
   }
-  .promotions img {
+
+  .shop-now {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .promo img {
     width: 100%;
   }
 }
-
