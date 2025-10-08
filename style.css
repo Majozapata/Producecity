@@ -5,16 +5,17 @@
   box-sizing: border-box;
 }
 
-/* GENERAL BODY */
+/* GENERAL */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #222;
+  overflow-x: hidden;
 }
 
-/* CONTACT BAR */
+/* FRANJA GRIS SUPERIOR */
 .contact-bar {
-  background-color: #555;
+  background-color: #555555;
   color: white;
   text-align: center;
   font-size: 0.9rem;
@@ -23,16 +24,16 @@ body {
 
 /* HEADER */
 .header {
-  background-color: #114b2c; /* Verde más oscuro */
+  background-color: #0d2a1b; /* Verde oscuro casi negro */
   color: white;
-  padding: 20px 40px;
+  padding: 25px 50px;
+  width: 100%;
 }
 
-.header-container {
+.header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   position: relative;
 }
 
@@ -41,27 +42,27 @@ body {
   height: auto;
 }
 
-.site-title {
+.title {
   flex: 1;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 700;
-  color: #f1c232; /* Dorado */
+  color: white;
 }
 
 .shop-now {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: #f1c232;
+  background-color: #f1c232; /* Dorado */
   color: #1a1a1a;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border-radius: 25px;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease;
-  margin: 10px 40px;
+  margin: 15px 40px;
 }
 
 .shop-now:hover {
@@ -69,31 +70,31 @@ body {
   transform: scale(1.05);
 }
 
-/* PROMOTIONS - Vertical display */
+/* PROMOTIONS (una sola visible por pantalla) */
 .promotions {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
-  padding: 40px 20px;
-  background-color: #f8f8f8;
+  gap: 50px;
+  padding: 40px 0;
+  background-color: #ffffff;
 }
 
 .promotions img {
-  width: 90%;
-  max-width: 800px;
+  width: 95%;
+  max-width: 900px;
   border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
 .promotions img:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 /* FOOTER */
 footer {
-  background-color: #114b2c;
+  background-color: #0d2a1b;
   color: white;
   text-align: center;
   padding-top: 20px;
@@ -117,33 +118,36 @@ footer {
 }
 
 .copy {
-  background-color: #0e3924;
+  background-color: #071a0f;
   padding: 10px;
   font-size: 0.9rem;
 }
 
 /* RESPONSIVE DESIGN */
-
-/* Tablet */
 @media (max-width: 1024px) {
-  .site-title {
+  .title {
     font-size: 1.5rem;
   }
-
   .shop-now {
     margin: 10px 20px;
   }
-
   .promotions img {
     max-width: 90%;
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
-  .header-container {
+  .header-inner {
     flex-direction: column;
-    text-align: center;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-top: 10px;
   }
 
   .shop-now {
@@ -151,12 +155,8 @@ footer {
     margin: 15px auto;
   }
 
-  .site-title {
-    margin: 10px 0;
-  }
-
   .promotions img {
-    width: 95%;
+    width: 90%;
   }
 
   .contact-bar {
@@ -164,16 +164,10 @@ footer {
   }
 }
 
-/* Small Mobile */
 @media (max-width: 480px) {
-  .site-title {
+  .title {
     font-size: 1.3rem;
   }
-
-  .shop-now {
-    padding: 8px 15px;
-  }
-
   .promotions img {
     width: 100%;
   }
