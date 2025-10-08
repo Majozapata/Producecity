@@ -19,7 +19,7 @@ body {
 }
 
 .header-main {
-  background-color: #002521; /* Verde solicitado */
+  background-color: #07130c; /* Verde solicitado */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +33,7 @@ body {
 }
 
 .header-text {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   color: white;
   letter-spacing: 1px;
@@ -125,3 +125,4 @@ body {
   font-size: 14px;
   margin-top: 20px;
 }
+
