@@ -25,7 +25,7 @@ body {
 
 /* Header principal */
 .header-main {
-  background-color: #0b2e25; /* Verde con tono azulado */
+  background-color: ##0b1c0b; /* Verde con tono azulado */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,7 +40,7 @@ body {
 
 /* Botón SHOP NOW */
 .shop-btn {
-  background-color: #e6c34a; /* Dorado brillante */
+  background-color: #ecc634; /* Dorado brillante */
   color: black;
   border: none;
   padding: 16px 40px;
@@ -90,7 +90,7 @@ body {
   text-align: center;
   padding: 25px 0 10px;
   font-size: 16px;
-  border-top: 4px solid #e6c34a;
+  border-top: 4px solid #ffffff;
 }
 
 .footer-info h3 {
@@ -167,3 +167,4 @@ body {
     width: 90%;
   }
 }
+
