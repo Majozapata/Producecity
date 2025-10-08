@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 40px;
+  padding: 10px 20px;
   color: white;
 }
 
@@ -80,7 +80,7 @@ body {
   background-color: #07130c;
   color: white;
   text-align: center;
-  padding: 40px 0;
+  padding: 20px 0;
   font-size: 15px;
 }
 
@@ -122,8 +122,9 @@ body {
 }
 
 .footer p {
-  font-size: 14px;
+  font-size: 18px;
   margin-top: 20px;
 }
+
 
 
