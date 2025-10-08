@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #fff;
+  color: #111;
 }
 
 /* --- Header --- */
@@ -18,28 +19,37 @@ body {
 }
 
 .header-main {
-  background-color: #071a0f; /* Verde más oscuro y azulado */
+  background-color: #002838; /* Verde oscuro azulado */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 40px;
+  padding: 20px 40px;
+  color: white;
+  text-align: center;
 }
 
 .logo {
-  width: 130px; /* Logo más grande */
+  width: 130px;
   height: auto;
 }
 
+.header-text {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .shop-btn {
-  background-color: #d4af37; /* Dorado más intenso */
+  background-color: #d4af37; /* Dorado brillante */
   color: black;
   border: none;
-  padding: 14px 30px;
+  padding: 14px 32px;
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
-  border-radius: 0; /* Cuadrado */
-  transition: 0.3s;
+  border-radius: 0;
+  transition: background-color 0.3s;
 }
 
 .shop-btn:hover {
@@ -66,10 +76,10 @@ body {
 
 /* --- Footer --- */
 .footer {
-  background-color: #071a0f;
+  background-color: #002838;
   color: white;
   text-align: center;
-  padding: 30px 0;
+  padding: 40px 0 25px 0;
   font-size: 15px;
 }
 
@@ -80,6 +90,7 @@ body {
   flex-wrap: wrap;
   gap: 60px;
   margin-bottom: 20px;
+  border: none; /* ❌ Elimina cualquier borde o línea */
 }
 
 .footer-section {
@@ -89,11 +100,24 @@ body {
 
 .footer-section h3 {
   font-size: 18px;
-  margin-bottom: 10px;
-  color: #d4af37;
+  margin-bottom: 12px;
+  color: white;
 }
 
 .payments {
-  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.payments img {
+  width: 50px;
   height: auto;
+  filter: brightness(100%);
+}
+
+.footer p {
+  font-size: 14px;
+  margin-top: 20px;
 }
