@@ -38,19 +38,19 @@ header {
 }
 
 .header-logo img {
-  height: 80px;
+  height: 150px;
   width: auto;
 }
 
 .header-text {
-  font-size: 1.8rem;
+  font-size: 4rem;
   font-weight: 600;
   color: #ffdd57;
   text-align: center;
 }
 
 .header-button {
-  background-color: #ffe24a;
+  background-color: #ffd951;
   color: #001c1e;
   text-decoration: none;
   padding: 12px 25px;
@@ -166,3 +166,4 @@ footer {
     width: 95%;
   }
 }
+
