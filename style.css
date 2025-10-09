@@ -133,6 +133,7 @@ footer {
   border: none;
 }
 
+
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Tablets */
@@ -180,6 +181,91 @@ footer {
     gap: 15px;
   }
 }
+/* ----- Header Responsive Design ----- */
+
+/* Estructura base */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 30px;
+  background-color: #001c1e;
+  color: #f2d16b;
+}
+
+.header-logo img {
+  height: 60px;
+  width: auto;
+}
+
+.header-text {
+  font-size: 1.5rem;
+  text-align: center;
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.header-button {
+  background-color: #f2d16b;
+  color: #001c1e;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.header-button:hover {
+  transform: scale(1.05);
+}
+
+/* ----- Vista Móvil ----- */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .header-logo img {
+    height: 50px;
+  }
+
+  .header-text {
+    font-size: 1.2rem;
+  }
+
+  .header-button {
+    width: 60%;
+    max-width: 200px;
+    font-size: 1rem;
+  }
+}
+
+/* ----- Vista Tablet ----- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .header-text {
+    flex: 100%;
+    text-align: center;
+  }
+
+  .header-logo img {
+    height: 55px;
+  }
+}
+
 
 
 
