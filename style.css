@@ -51,10 +51,11 @@ header {
 }
 
 .header-button {
-  flex: 1;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
+
 .header-button a {
   background-color: #ffd951;
   color: #001c1e;
@@ -63,7 +64,10 @@ header {
   border-radius: 10px;
   font-weight: 600;
   transition: 0.3s ease;
+  white-space: nowrap; /* Evita que se alargue el texto */
+  display: inline-block;
 }
+
 .header-button a:hover {
   background-color: #ffea72;
   transform: scale(1.05);
@@ -218,6 +222,7 @@ footer {
     width: 95%;
   }
 }
+
 
 
 
