@@ -12,9 +12,10 @@ body {
 }
 
 /* ===== HEADER ===== */
+/* ===== HEADER ===== */
 header {
   width: 100%;
-  background-color: #151c25;
+  background-color: #001c1e;
   color: #f5f5f5;
 }
 
@@ -29,31 +30,32 @@ header {
 
 /* Main header structure */
 .header-content {
-  display: flex;
-  justify-content: space-between; /* logo a la izq, texto al centro, botón a la derecha */
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 20px 40px;
+  padding: 20px 30px;
 }
 
 .header-logo {
-  flex: 1;
   display: flex;
   justify-content: flex-start;
 }
 
+.header-logo img {
+  height: 120px;
+  width: auto;
+}
+
 .header-text {
-  flex: 2;
-  text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #ffdd57;
+  text-align: center;
 }
 
 .header-button {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 
 .header-button a {
@@ -64,14 +66,14 @@ header {
   border-radius: 10px;
   font-weight: 600;
   transition: 0.3s ease;
-  white-space: nowrap; /* Evita que se alargue el texto */
-  display: inline-block;
+  white-space: nowrap;
 }
 
 .header-button a:hover {
   background-color: #ffea72;
   transform: scale(1.05);
 }
+
 
 /* 📱 Ajustes para móviles */
 @media (max-width: 768px) {
@@ -222,6 +224,7 @@ footer {
     width: 95%;
   }
 }
+
 
 
 
