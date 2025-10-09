@@ -1,4 +1,4 @@
-/* ===== GENERAL STYLES ===== */
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -12,14 +12,12 @@ body {
 }
 
 /* ===== HEADER ===== */
-/* ===== HEADER ===== */
 header {
   width: 100%;
   background-color: #151c25;
   color: #f5f5f5;
 }
 
-/* --- Línea superior con contacto --- */
 .top-info {
   text-align: center;
   font-size: 0.9rem;
@@ -28,19 +26,17 @@ header {
   color: #dcdcdc;
 }
 
-/* --- Contenido principal del header --- */
 .header-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
   flex-wrap: wrap;
-  background-color: #151c25;
-  padding: 15px 5%;
   text-align: center;
 }
 
 .header-logo img {
-  height: 70px;
+  height: 80px;
   width: auto;
   transition: transform 0.3s ease;
 }
@@ -49,63 +45,55 @@ header {
   transform: scale(1.05);
 }
 
-.header-text {
+.header-center {
   flex: 1;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #f2d16b;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.header-button {
+.header-center h1 {
+  color: #f2d16b;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.shop-btn {
   background-color: #f2d16b;
   color: #001c1e;
   text-decoration: none;
   padding: 12px 25px;
   border-radius: 10px;
   font-weight: 600;
-  transition: 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
-.header-button:hover {
+.shop-btn:hover {
   transform: scale(1.05);
 }
 
 /* ===== RESPONSIVE ===== */
-
-/* Tablets */
-@media (max-width: 992px) {
-  .header-text {
-    font-size: 1.4rem;
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px 0;
   }
 
   .header-logo img {
     height: 60px;
   }
-}
 
-/* Móviles */
-@media (max-width: 600px) {
-  .header-content {
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px 0;
+  .header-center h1 {
+    font-size: 1.4rem;
   }
 
-  .header-logo img {
-    height: 55px;
-  }
-
-  .header-text {
-    font-size: 1.2rem;
-  }
-
-  .header-button {
+  .shop-btn {
     width: 70%;
     font-size: 1rem;
   }
 }
-
 
 /* ===== FLYERS SECTION ===== */
 .flyers {
@@ -124,7 +112,7 @@ header {
   transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.8s ease;
 }
 
-/* === Animations on scroll === */
+/* Animation */
 .hidden {
   opacity: 0;
   transform: translateY(50px);
@@ -155,7 +143,7 @@ footer {
   align-items: center;
   gap: 25px;
   padding: 20px 0;
-  background-color: #003B2F; /* el verde oscuro de tu sitio */
+  background-color: #003B2F;
 }
 
 .payment-logo {
@@ -174,145 +162,3 @@ footer {
   height: 350px;
   border: none;
 }
-
-
-/* ===== RESPONSIVE DESIGN ===== */
-
-/* Tablets */
-@media (max-width: 992px) {
-  .main-header h1 {
-    font-size: 1.5rem;
-  }
-
-  .flyer-img {
-    width: 90%;
-  }
-
-  .shop-btn {
-    padding: 10px 20px;
-  }
-}
-
-/* Mobiles */
-@media (max-width: 600px) {
-  .main-header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .logo {
-    margin-bottom: 10px;
-    height: 50px;
-  }
-
-  .main-header h1 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-  }
-
-  .shop-btn {
-    width: 70%;
-  }
-
-  .flyer-img {
-    width: 95%;
-  }
-
-  .payments {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
-/* ----- Header Responsive Design ----- */
-
-/* Estructura base */
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 15px 30px;
-  background-color: #001c1e;
-  color: #f2d16b;
-}
-
-.header-logo img {
-  height: 60px;
-  width: auto;
-}
-
-.header-text {
-  font-size: 1.5rem;
-  text-align: center;
-  flex: 1;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-}
-
-.header-button {
-  background-color: #f2d16b;
-  color: #001c1e;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.header-button:hover {
-  transform: scale(1.05);
-}
-
-/* ----- Vista Móvil ----- */
-@media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-    padding: 15px;
-  }
-
-  .header-logo img {
-    height: 50px;
-  }
-
-  .header-text {
-    font-size: 1.2rem;
-  }
-
-  .header-button {
-    width: 60%;
-    max-width: 200px;
-    font-size: 1rem;
-  }
-}
-
-/* ----- Vista Tablet ----- */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .header-content {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .header-text {
-    flex: 100%;
-    text-align: center;
-  }
-
-  .header-logo img {
-    height: 55px;
-  }
-}
-
-
-
-
-
-
-
-
-
