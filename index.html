@@ -7,17 +7,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  <!-- HEADER PROMO -->
-<div class="header-promo">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Produce_City_Farmers_Market_Logo.png" alt="Produce City Logo">
-  <h2>Don't miss our weekly sales</h2>
-  <a href="#">Shop Now</a>
-</div>
 
-  <!-- HEADER -->
+  <!-- ===== HEADER ===== -->
   <header>
-    <div class="top-info">
+    <div class="header-contact">
       📞 (954) 399-8069 | producecityfarmersmarket@gmail.com | 1100 N University Dr, Pembroke Pines, FL 33024
     </div>
 
@@ -26,14 +19,15 @@
         <img src="logo.png" alt="Produce City Logo">
       </div>
 
-      <div class="header-center">
-        <h1>Don't miss our weekly sales</h1>
-        <a href="https://producecitymarket.com/" class="shop-btn">Shop Now</a>
+      <div class="header-text">
+        Don’t miss our weekly sales
       </div>
+
+      <a href="https://producecitymarket.com/" class="header-button">Shop Now</a>
     </div>
   </header>
 
-  <!-- FLYERS -->
+  <!-- ===== FLYERS SECTION ===== -->
   <section class="flyers">
     <img src="promo1.png" alt="Promo 1" class="flyer-img hidden">
     <img src="promo2.png" alt="Promo 2" class="flyer-img hidden">
@@ -45,20 +39,25 @@
     <img src="promo8.png" alt="Promo 8" class="flyer-img hidden">
   </section>
 
-  <!-- FOOTER -->
+  <!-- ===== FOOTER ===== -->
   <footer>
     <div class="payment-methods">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="payment-logo">
       <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" class="payment-logo">
     </div>
+
     <div class="map-container">
-      <iframe src="https://www.google.com/maps?q=1100+N+University+Dr,+Pembroke+Pines,+FL+33024&output=embed" allowfullscreen loading="lazy"></iframe>
+      <iframe 
+        src="https://www.google.com/maps?q=1100+N+University+Dr,+Pembroke+Pines,+FL+33024&output=embed" 
+        allowfullscreen="" loading="lazy">
+      </iframe>
     </div>
   </footer>
 
-  <!-- SCROLL ANIMATION -->
+  <!-- ===== SCROLL ANIMATION SCRIPT ===== -->
   <script>
     const flyers = document.querySelectorAll('.flyer-img');
+
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -67,9 +66,9 @@
         }
       });
     }, { threshold: 0.2 });
+
     flyers.forEach(flyer => observer.observe(flyer));
   </script>
 
 </body>
 </html>
-
