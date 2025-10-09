@@ -13,7 +13,7 @@ body {
 
 /* ===== HEADER ===== */
 header {
-  background-color: #151c25;
+  background-color: #0a2236;
   color: #f5f5f5;
   width: 100%;
 }
@@ -51,7 +51,7 @@ header {
 }
 
 .shop-btn {
-  background-color: #ffdf36;
+  background-color: #ffe24a;
   color: #001c1e;
   text-decoration: none;
   padding: 12px 25px;
@@ -61,7 +61,7 @@ header {
 }
 
 .shop-btn:hover {
-  background-color: #ffcc00;
+  background-color: #ffe24a;
   transform: scale(2);
 }
 
@@ -174,5 +174,6 @@ footer {
     gap: 15px;
   }
 }
+
 
 
