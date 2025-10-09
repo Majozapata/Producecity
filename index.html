@@ -3,36 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produce City Weekly Sale</title>
+  <title>Produce City Market | Weekly Sales</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <p>📞 (954) 399-8069 | producecityfarmersmarket@gmail.com | 1100 N University Dr, Pembroke Pines, FL 33024</p>
+    <div class="top-info">
+      <p>📞 (954) 399-8069 | producecityfarmersmarket@gmail.com | 1100 N University Dr, Pembroke Pines, FL 33024</p>
+    </div>
+
+    <div class="main-header">
+      <img src="logo.png" alt="Produce City Market Logo" class="logo">
+      <h1>Don't miss our weekly sales</h1>
+      <a href="https://producecitymarket.com/" class="shop-btn">Shop Now</a>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Don't miss our weekly sales!</h1>
-    <button class="button-main">SHOP NOW</button>
+  <!-- FLYERS SECTION -->
+  <section class="flyers">
+    <img src="promo1.png" alt="Promo 1" class="flyer-img hidden">
+    <img src="promo2.png" alt="Promo 2" class="flyer-img hidden">
+    <img src="promo3.png" alt="Promo 3" class="flyer-img hidden">
+    <img src="promo4.png" alt="Promo 4" class="flyer-img hidden">
+    <img src="promo5.png" alt="Promo 5" class="flyer-img hidden">
+    <img src="promo6.png" alt="Promo 6" class="flyer-img hidden">
+    <img src="promo7.png" alt="Promo 7" class="flyer-img hidden">
+    <img src="promo8.png" alt="Promo 8" class="flyer-img hidden">
   </section>
 
-
-  <!-- Flyers -->
-<section class="flyers">
-    <img src="promo1.png" alt="Promo 1" class="flyer-img">
-    <img src="promo2.png" alt="Promo 2" class="flyer-img">
-    <img src="promo3.png" alt="Promo 3" class="flyer-img">
-    <img src="promo4.png" alt="Promo 4" class="flyer-img">
-    <img src="promo5.png" alt="Promo 5" class="flyer-img">
-    <img src="promo6.png" alt="Promo 6" class="flyer-img">
-    <img src="promo7.png" alt="Promo 7" class="flyer-img">
-    <img src="promo8.png" alt="Promo 8" class="flyer-img">
-  </section>
-
+  <!-- FOOTER -->
   <footer>
-    <p>Visit us today at Produce City Farmers Market</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen></iframe>
+    <div class="payments">
+      <img src="visa.png" alt="Visa" class="payment-logo">
+      <img src="mastercard.png" alt="MasterCard" class="payment-logo">
+    </div>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps?q=1100+N+University+Dr,+Pembroke+Pines,+FL+33024&output=embed" 
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
   </footer>
+
+  <!-- SCROLL ANIMATION SCRIPT -->
+  <script>
+    const flyers = document.querySelectorAll('.flyer-img');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    flyers.forEach(flyer => observer.observe(flyer));
+  </script>
+
 </body>
 </html>
-
