@@ -37,7 +37,7 @@ body {
 .header-text {
   flex: 1;
   text-align: center;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 700;
   color: white;
   margin: 10px 0;
@@ -51,12 +51,12 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 2px;
+  font-size: 18px;
 }
 
 .shop-btn:hover {
-  background-color: #b89a3f;
+  background-color: #ffe337;
 }
 
 /* --- Flyers --- */
@@ -109,12 +109,12 @@ body {
 }
 
 .map-container {
-  width: 90%;
-  max-width: 900px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 /* --- Responsive --- */
@@ -185,3 +185,4 @@ body {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
