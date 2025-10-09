@@ -13,7 +13,7 @@ body {
 
 /* ===== HEADER ===== */
 header {
-  background-color: #001c1e;
+  background-color: #001808;
   color: #f5f5f5;
   width: 100%;
 }
@@ -37,14 +37,14 @@ header {
 }
 
 .logo {
-  height: 60px;
+  height: 100px;
   width: auto;
 }
 
 .main-header h1 {
   flex: 1;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 4rem;
   font-weight: 600;
   color: #ffdd57;
   letter-spacing: 1px;
@@ -55,7 +55,7 @@ header {
   color: #001c1e;
   text-decoration: none;
   padding: 12px 25px;
-  border-radius: 30px;
+  border-radius: 15px;
   font-weight: 600;
   transition: 0.3s ease;
 }
@@ -174,3 +174,4 @@ footer {
     gap: 15px;
   }
 }
+
