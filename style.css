@@ -1,4 +1,4 @@
-/* ===== RESET ===== */
+/* ===== GENERAL STYLES ===== */
 * {
   margin: 0;
   padding: 0;
@@ -14,93 +14,62 @@ body {
 /* ===== HEADER ===== */
 header {
   width: 100%;
-  background-color: #151c25;
+  background-color: #001c1e;
   color: #f5f5f5;
 }
 
-.top-info {
+/* Contact info bar */
+.header-contact {
+  background-color: #00292b;
   text-align: center;
   font-size: 0.9rem;
-  background-color: #00292b;
   padding: 8px 10px;
   color: #dcdcdc;
 }
 
+/* Main header structure */
 .header-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 20px 5%;
+  gap: 25px;
   flex-wrap: wrap;
-  text-align: center;
+  padding: 20px 30px;
 }
 
 .header-logo img {
   height: 80px;
   width: auto;
-  transition: transform 0.3s ease;
 }
 
-.header-logo img:hover {
-  transform: scale(1.05);
-}
-
-.header-center {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.header-center h1 {
-  color: #f2d16b;
+.header-text {
   font-size: 1.8rem;
   font-weight: 600;
+  color: #ffdd57;
+  text-align: center;
 }
 
-.shop-btn {
-  background-color: #f2d16b;
+.header-button {
+  background-color: #ffe24a;
   color: #001c1e;
   text-decoration: none;
   padding: 12px 25px;
   border-radius: 10px;
   font-weight: 600;
-  transition: transform 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.shop-btn:hover {
+.header-button:hover {
+  background-color: #ffea72;
   transform: scale(1.05);
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-    gap: 15px;
-    padding: 25px 0;
-  }
-
-  .header-logo img {
-    height: 60px;
-  }
-
-  .header-center h1 {
-    font-size: 1.4rem;
-  }
-
-  .shop-btn {
-    width: 70%;
-    font-size: 1rem;
-  }
-}
-
-/* ===== FLYERS SECTION ===== */
+/* ===== FLYERS ===== */
 .flyers {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0;
+  padding: 40px 0;
   gap: 40px;
 }
 
@@ -112,7 +81,11 @@ header {
   transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.8s ease;
 }
 
-/* Animation */
+.flyer-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
 .hidden {
   opacity: 0;
   transform: translateY(50px);
@@ -122,11 +95,6 @@ header {
   opacity: 1;
   transform: translateY(0);
   transition: all 0.8s ease-out;
-}
-
-.flyer-img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
 
 /* ===== FOOTER ===== */
@@ -161,4 +129,40 @@ footer {
   width: 100%;
   height: 350px;
   border: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .header-text {
+    font-size: 1.4rem;
+  }
+
+  .header-logo img {
+    height: 65px;
+  }
+
+  .flyer-img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .header-text {
+    font-size: 1.2rem;
+  }
+
+  .header-button {
+    width: 70%;
+    max-width: 200px;
+  }
+
+  .flyer-img {
+    width: 95%;
+  }
 }
