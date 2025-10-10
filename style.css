@@ -33,7 +33,7 @@ header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 20px 30px;
+  padding: 20px 40px;
 }
 
 .header-logo {
@@ -47,10 +47,10 @@ header {
 }
 
 .header-text {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #ffdd57;
   text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffdd57;
 }
 
 .header-button {
@@ -73,6 +73,7 @@ header {
   background-color: #ffea72;
   transform: scale(1.05);
 }
+
 
 
 /* 📱 Ajustes para móviles */
@@ -224,6 +225,7 @@ footer {
     width: 95%;
   }
 }
+
 
 
 
