@@ -74,6 +74,13 @@ header {
   transform: scale(1.05);
 }
 
+.payment-text {
+  color: white;
+  font-size: 1rem;
+  margin-top: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
 /* ===== 📱 VISTA MOBILE ===== */
 @media (max-width: 768px) {
   /* 🔹 Barra superior más compacta */
@@ -196,6 +203,7 @@ footer {
   height: 350px;
   border: none;
 }
+
 
 
 
