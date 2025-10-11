@@ -205,6 +205,119 @@ footer {
   border: none;
 }
 
+/* ===== SUBSCRIBE SECTION ===== */
+.subscribe-section {
+  background-color: #00292b;
+  color: #ffdd57;
+  text-align: center;
+  padding: 60px 20px;
+  border-top: 4px solid #ffdd57;
+}
+
+.subscribe-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffdd57;
+  margin-bottom: 10px;
+}
+
+.subscribe-section p {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.subscribe-form label {
+  color: #ffffff;
+  font-weight: 600;
+  align-self: flex-start;
+  width: 100%;
+  text-align: left;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 2px solid #ffdd57;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.subscribe-form input:focus {
+  border-color: #fff;
+  box-shadow: 0 0 8px rgba(255, 221, 87, 0.6);
+}
+
+.subscribe-form button {
+  background-color: #ffdd57;
+  color: #001c1e;
+  font-weight: 700;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #ffea72;
+  transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .subscribe-section {
+    padding: 50px 15px;
+  }
+
+  .subscribe-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .subscribe-form {
+    max-width: 380px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  .subscribe-section {
+    padding: 40px 10px;
+  }
+
+  .subscribe-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .subscribe-section p {
+    font-size: 0.9rem;
+  }
+
+  .subscribe-form input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .subscribe-form button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
 
 
 
