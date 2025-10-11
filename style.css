@@ -205,117 +205,73 @@ footer {
   border: none;
 }
 
-/* ===== SUBSCRIBE SECTION ===== */
-.subscribe-section {
-  background-color: #ffffff;
-  padding: 80px 20px;
+.weekly-sales {
+  background-color: #f9f9f9; /* Fondo general claro */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px 0;
 }
 
-.subscribe-box {
-  background-color: #00292b;
-  border: 3px solid #ffdd57;
-  border-radius: 15px;
-  padding: 50px 40px;
-  max-width: 600px;
-  width: 100%;
+.sales-box {
+  background-color: #083d3c; /* Verde oscuro elegante */
+  color: #ffcc00; /* Dorado */
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px; /* Limita el ancho */
+  width: 90%; /* Para móviles */
 }
 
-.subscribe-box h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #ffdd57;
+.sales-box h2 {
+  font-size: 24px;
   margin-bottom: 10px;
+  color: #ffcc00;
 }
 
-.subscribe-box p {
+.sales-box p {
+  font-size: 14px;
   color: #ffffff;
-  font-size: 1rem;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-.subscribe-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-.subscribe-form label {
-  color: #ffffff;
-  font-weight: 600;
-  align-self: flex-start;
-  width: 100%;
-  text-align: left;
-}
-
-.subscribe-form input {
-  width: 100%;
-  padding: 12px 15px;
-  border-radius: 8px;
-  border: 2px solid #ffdd57;
-  font-size: 1rem;
-  outline: none;
-  transition: all 0.3s ease;
-}
-
-.subscribe-form input:focus {
-  border-color: #fff;
-  box-shadow: 0 0 8px rgba(255, 221, 87, 0.6);
-}
-
-.subscribe-form button {
-  background-color: #ffdd57;
-  color: #001c1e;
-  font-weight: 700;
-  padding: 12px 30px;
+.sales-box input {
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px;
   border: none;
-  border-radius: 8px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.sales-box button {
+  background-color: #ffcc00;
+  color: #083d3c;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: all 0.3s ease;
+  font-weight: bold;
+  transition: 0.3s ease;
 }
 
-.subscribe-form button:hover {
-  background-color: #ffea72;
-  transform: scale(1.05);
+.sales-box button:hover {
+  background-color: #e6b800;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 768px) {
-  .subscribe-box {
-    padding: 40px 25px;
-    max-width: 90%;
-  }
-
-  .subscribe-box h2 {
-    font-size: 1.6rem;
-  }
-
-  .subscribe-box p {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .subscribe-box {
+/* 📱 Responsive para móvil */
+@media (max-width: 600px) {
+  .sales-box {
     padding: 30px 20px;
   }
 
-  .subscribe-box h2 {
-    font-size: 1.3rem;
+  .sales-box h2 {
+    font-size: 18px;
   }
 
-  .subscribe-box p {
-    font-size: 0.9rem;
-  }
-
-  .subscribe-form input,
-  .subscribe-form button {
-    font-size: 0.9rem;
+  .sales-box input {
+    width: 100%;
   }
 }
+
