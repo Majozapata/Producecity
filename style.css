@@ -75,7 +75,7 @@ header {
 }
 
 .payment-text {
-  color: white;
+  color: #ffdd57;
   font-size: 1rem;
   margin-top: 12px;
   font-family: "Poppins", sans-serif;
@@ -203,6 +203,7 @@ footer {
   height: 350px;
   border: none;
 }
+
 
 
 
