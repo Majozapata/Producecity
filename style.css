@@ -207,21 +207,32 @@ footer {
 
 /* ===== SUBSCRIBE SECTION ===== */
 .subscribe-section {
-  background-color: #00292b;
-  color: #ffdd57;
-  text-align: center;
-  padding: 60px 20px;
-  border-top: 4px solid #ffdd57;
+  background-color: #ffffff;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.subscribe-section h2 {
+.subscribe-box {
+  background-color: #00292b;
+  border: 3px solid #ffdd57;
+  border-radius: 15px;
+  padding: 50px 40px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-box h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #ffdd57;
   margin-bottom: 10px;
 }
 
-.subscribe-section p {
+.subscribe-box p {
   color: #ffffff;
   font-size: 1rem;
   margin-bottom: 25px;
@@ -232,8 +243,6 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  max-width: 450px;
-  margin: 0 auto;
 }
 
 .subscribe-form label {
@@ -277,51 +286,36 @@ footer {
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
-
-/* Tablets */
-@media (max-width: 992px) {
-  .subscribe-section {
-    padding: 50px 15px;
+@media (max-width: 768px) {
+  .subscribe-box {
+    padding: 40px 25px;
+    max-width: 90%;
   }
 
-  .subscribe-section h2 {
-    font-size: 1.8rem;
+  .subscribe-box h2 {
+    font-size: 1.6rem;
   }
 
-  .subscribe-form {
-    max-width: 380px;
+  .subscribe-box p {
+    font-size: 0.95rem;
   }
 }
 
-/* Móviles */
-@media (max-width: 600px) {
-  .subscribe-section {
-    padding: 40px 10px;
+@media (max-width: 480px) {
+  .subscribe-box {
+    padding: 30px 20px;
   }
 
-  .subscribe-section h2 {
-    font-size: 1.4rem;
+  .subscribe-box h2 {
+    font-size: 1.3rem;
   }
 
-  .subscribe-section p {
+  .subscribe-box p {
     font-size: 0.9rem;
   }
 
-  .subscribe-form input {
-    font-size: 0.9rem;
-    padding: 10px;
-  }
-
+  .subscribe-form input,
   .subscribe-form button {
     font-size: 0.9rem;
-    padding: 10px 20px;
   }
 }
-
-
-
-
-
-
-
-
