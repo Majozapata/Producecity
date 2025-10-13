@@ -247,7 +247,7 @@ footer {
 }
 
 .sales-box p {
-  font-size: 1rem;
+  font-size: 3rem;
   color: #ffffff;
   margin-bottom: 25px;
 }
@@ -307,3 +307,4 @@ footer {
     box-shadow: 0 0 25px rgba(255, 240, 150, 0.8), 0 0 45px rgba(255, 220, 100, 0.6);
   }
 }
+
