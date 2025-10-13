@@ -206,7 +206,7 @@ footer {
 }
 
 .weekly-sales {
-  background-color: #f9f9f9; /* Fondo general claro */
+  background-color: #f9f9f9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,14 +214,20 @@ footer {
 }
 
 .sales-box {
-  background-color: #083d3c; /* Verde oscuro elegante */
-  color: #ffcc00; /* Dorado */
+  background-color: #083d3c;
+  color: #ffcc00;
   text-align: center;
-  padding: 60px 80px;
-  border-radius: 15px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-  max-width: 800px; /* Limita el ancho */
-  width: 90%; /* Para móviles */
+  padding: 40px 80px;
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+  width: fit-content;       /* 🔹 se ajusta al contenido */
+  max-width: 100%;          /* 🔹 evita desbordes */
+  transition: all 0.4s ease;
+  margin: auto;             /* 🔹 centrado perfecto */
+}
+
+.sales-box:hover {
+  transform: scale(1.02);
 }
 
 .sales-box h2 {
@@ -231,39 +237,29 @@ footer {
 }
 
 .sales-box p {
-  font-size: 20px;
+  font-size: 18px;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
+.sales-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 .sales-box input {
   padding: 10px;
-  width: 80%;
+  width: 250px;
   border-radius: 5px;
   border: none;
-  margin-bottom: 15px;
   outline: none;
 }
 
-.sales-box {
-  background-color: #083d3c;
-  color: #ffcc00;
-  text-align: center;
-  padding: 15px 150px; /* 🔸 menos alto, más ancho */
-  border-radius: 20px;
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
-  max-width: 1000px; /* 🔸 reduce un poco el límite para que se vea más compacto */
-  width: fit-content; /* 🔸 se ajusta al contenido */
-  transition: all 0.4s ease;
-}
-
-
-.sales-box:hover {
-  transform: scale(1.02);
-}
-.sales-box input[type="submit"] {
-  background-color: #ffcc00;       /* Dorado */
-  color: #083d3c;                 /* Verde oscuro */
+.sales-box button {
+  background-color: #ffcc00;
+  color: #083d3c;
   border: none;
   padding: 10px 25px;
   font-weight: 600;
@@ -271,30 +267,32 @@ footer {
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease;
-  margin-top: 5px;
 }
 
-.sales-box input[type="submit"]:hover {
-  background-color: #ffe066;      /* Dorado más claro */
+.sales-box button:hover {
+  background-color: #ffe066;
   transform: scale(1.05);
 }
 
-
-
-/* 📱 Responsive para móvil */
+/* 📱 Responsive */
 @media (max-width: 600px) {
   .sales-box {
-    padding: 30px 20px;
-  }
-
-  .sales-box h2 {
-    font-size: 18px;
+    padding: 25px 30px;
   }
 
   .sales-box input {
     width: 100%;
   }
+
+  .sales-box h2 {
+    font-size: 20px;
+  }
+
+  .sales-box p {
+    font-size: 14px;
+  }
 }
+
 
 
 
