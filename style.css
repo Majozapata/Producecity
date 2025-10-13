@@ -249,7 +249,7 @@ footer {
   background-color: #083d3c;
   color: #ffcc00;
   text-align: center;
-  padding: 30px 100px; /* 🔹 menos alto (30px) y más ancho (100px) */
+  padding: 20px 350px; /* 🔹 menos alto (30px) y más ancho (100px) */
   border-radius: 20px;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
   max-width: 750px; /* 🔹 más ancho */
@@ -276,6 +276,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
