@@ -32,24 +32,42 @@
   <div class="sales-box">
     <h2>DON’T MISS OUR WEEKLY SALES!</h2>
     <p>Type in your phone number to opt-in to receive our flyer via text message</p>
-    
-   <form 
-  action="https://docs.google.com/forms/d/e/1FAIpQLSepGZEgXM6tyJ5UlwSECLaU5FculL-GdE0RtpyRubZsP6T7yw/formResponse" 
-  method="POST" 
-  target="_blank"
->
-  <input 
-    type="text" 
-    id="phone" 
-    name="entry.1062658253" 
-    placeholder="Enter your phone number" 
-    required
-  >
-  <button type="submit">Subscribe</button>
-</form>
 
+    <form id="google-form">
+      <input 
+        type="text" 
+        id="phone" 
+        name="entry.1062658253" 
+        placeholder="Enter your phone number" 
+        required
+      >
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <p id="success-message" style="display:none; color:#ffcc00; margin-top:10px; font-weight:600;">
+      ✅ Thanks for subscribing!
+    </p>
   </div>
 </section>
+
+<script>
+  document.getElementById("google-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // Evita que se recargue o redireccione la página
+
+    const formData = new FormData();
+    formData.append("entry.1062658253", document.getElementById("phone").value);
+
+    fetch("https://docs.google.com/forms/d/e/1FAIpQLSepGZEgXM6tyJ5UlwSECLaU5FculL-GdE0RtpyRubZsP6T7yw/formResponse", {
+      method: "POST",
+      mode: "no-cors",
+      body: formData
+    }).then(() => {
+      document.getElementById("success-message").style.display = "block";
+      document.getElementById("phone").value = ""; // Limpia el campo
+    });
+  });
+</script>
+
 
 
   <!-- ===== FLYERS SECTION ===== -->
@@ -98,6 +116,7 @@
 
 </body>
 </html>
+
 
 
 
