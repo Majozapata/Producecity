@@ -217,7 +217,7 @@ footer {
   background-color: #083d3c; /* Verde oscuro elegante */
   color: #ffcc00; /* Dorado */
   text-align: center;
-  padding: 40px 60px;
+  padding: 60px 80px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   max-width: 600px; /* Limita el ancho */
@@ -225,13 +225,13 @@ footer {
 }
 
 .sales-box h2 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
   color: #ffcc00;
 }
 
 .sales-box p {
-  font-size: 14px;
+  font-size: 20px;
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -274,4 +274,5 @@ footer {
     width: 100%;
   }
 }
+
 
