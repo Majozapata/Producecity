@@ -281,11 +281,12 @@ footer {
 }
 
 /* ===== 📱 ADAPTACIÓN PARA TABLET ===== */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .sales-box {
-    width: 90%;
-    padding: 35px 50px;
+    width: 75%;
+    padding: 18px 12px;
   }
+}
 
   .sales-box h2 {
     font-size: 1.7rem;
@@ -330,5 +331,6 @@ footer {
     font-size: 0.9rem !important;
   }
 }
+
 
 
