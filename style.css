@@ -231,7 +231,7 @@ footer {
 }
 
 .sales-box p {
-  font-size: 30px;
+  font-size: 20px;
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -252,7 +252,7 @@ footer {
   padding: 15px 150px; /* 🔸 menos alto, más ancho */
   border-radius: 20px;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
-  max-width: 900px; /* 🔸 reduce un poco el límite para que se vea más compacto */
+  max-width: 1000px; /* 🔸 reduce un poco el límite para que se vea más compacto */
   width: fit-content; /* 🔸 se ajusta al contenido */
   transition: all 0.4s ease;
 }
@@ -295,6 +295,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
