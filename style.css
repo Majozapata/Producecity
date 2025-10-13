@@ -239,14 +239,14 @@ footer {
 }
 
 .sales-box h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 15px;
   color: #ffcc00;
   letter-spacing: 1px;
 }
 
 .sales-box p {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #ffffff;
   margin-bottom: 25px;
   line-height: 1.4;
@@ -329,3 +329,4 @@ footer {
     font-size: 0.9rem !important;
   }
 }
+
