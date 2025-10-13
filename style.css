@@ -249,12 +249,16 @@ footer {
   background-color: #ffcc00;
   color: #083d3c;
   border: none;
-  border-radius: 5px;
-  padding: 10px 25px;
+  border-radius: 8px;
+  padding: 6px 60px; /* 🔹 menos alto (6px), más ancho (60px) */
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1rem;
   transition: 0.3s ease;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 .sales-box button:hover {
   background-color: #e6b800;
@@ -274,6 +278,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
