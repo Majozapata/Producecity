@@ -261,6 +261,24 @@ footer {
 .sales-box:hover {
   transform: scale(1.02);
 }
+.sales-box input[type="submit"] {
+  background-color: #ffcc00;       /* Dorado */
+  color: #083d3c;                 /* Verde oscuro */
+  border: none;
+  padding: 10px 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 5px;
+}
+
+.sales-box input[type="submit"]:hover {
+  background-color: #ffe066;      /* Dorado más claro */
+  transform: scale(1.05);
+}
+
 
 
 /* 📱 Responsive para móvil */
@@ -277,6 +295,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
