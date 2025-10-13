@@ -299,10 +299,11 @@ footer {
 /* ===== 📱 ADAPTACIÓN PARA MOBILE ===== */
 @media (max-width: 600px) {
   .sales-box {
-    width: 90%;
-    padding: 25px 20px;
+    width: 80%;        /* 🔹 más angosto */
+    padding: 20px 15px; /* 🔹 menos relleno interno */
     border-radius: 18px;
   }
+}
 
   .sales-box h2 {
     font-size: 1.3rem;
@@ -329,4 +330,5 @@ footer {
     font-size: 0.9rem !important;
   }
 }
+
 
