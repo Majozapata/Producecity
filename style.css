@@ -249,13 +249,14 @@ footer {
   background-color: #083d3c;
   color: #ffcc00;
   text-align: center;
-  padding: 30px 100px; /* 🔹 menos alto (30px) y más ancho (100px) */
+  padding: 15px 150px; /* 🔸 menos alto, más ancho */
   border-radius: 20px;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
-  max-width: 900px; /* 🔹 más ancho */
-  width: 90%;
+  max-width: 750px; /* 🔸 reduce un poco el límite para que se vea más compacto */
+  width: fit-content; /* 🔸 se ajusta al contenido */
   transition: all 0.4s ease;
 }
+
 
 .sales-box:hover {
   transform: scale(1.02);
@@ -276,6 +277,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
