@@ -150,8 +150,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0;
-  gap: 40px;
+  padding: 20px 0; /* antes 40px → menos espacio vertical */
+  gap: 30px; /* antes 40px → separa menos los flyers */
 }
 
 .flyer-img {
@@ -217,21 +217,23 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  padding: 20px 0; /* antes 50px → menos espacio arriba y abajo */
 }
+
 
 .sales-box {
   background-color: #083d3c;
   color: #ffcc00;
   text-align: center;
-  padding: 50px 120px; /* 🔹 más ancho */
+  padding: 30px 60px; /* antes 50px 120px → más compacto */
   border-radius: 25px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
-  width: 80%;              /* 🔹 ocupa más espacio horizontal */
-  max-width: 1000px;       /* 🔹 límite para desktop */
+  width: 80%;
+  max-width: 1000px;
   transition: all 0.4s ease;
-  margin: 15px auto;       /* 🔹 centrado y con espacio */
+  margin: 10px auto; /* antes 15px → menos separación */
 }
+
 
 .sales-box:hover {
   transform: scale(1.02);
@@ -305,17 +307,3 @@ footer {
     box-shadow: 0 0 25px rgba(255, 240, 150, 0.8), 0 0 45px rgba(255, 220, 100, 0.6);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
