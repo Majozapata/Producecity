@@ -345,3 +345,49 @@ footer {
   }
 }
 
+/* 🔹 Ajuste para tablets (pantallas hasta 768px) */
+@media (max-width: 768px) {
+  header {
+    margin-bottom: 8px;
+  }
+
+  .weekly-sales {
+    padding: 15px 0;
+  }
+
+  .sales-box {
+    margin: 8px auto;
+    padding: 12px 8px;
+    width: 90%; /* más angosto visualmente en tablet */
+  }
+
+  .flyers {
+    padding: 15px 0;
+    gap: 20px;
+  }
+}
+
+/* 🔹 Ajuste para móviles pequeños (pantallas hasta 600px) */
+@media (max-width: 600px) {
+  header {
+    margin-bottom: 5px;
+  }
+
+  .weekly-sales {
+    padding: 10px 0;
+  }
+
+  .sales-box {
+    margin: 5px auto;
+    padding: 10px 5px;
+    width: 85%; /* más angosto en mobile */
+  }
+
+  .flyers {
+    padding: 10px 0;
+    gap: 15px;
+  }
+}
+
+
+
