@@ -63,8 +63,9 @@ header {
 }
 
 /* =========================================================
-   ===== BOTÓN INSTACART (FIX FINAL) =====
+   ===== BOTÓN INSTACART (FINAL BIEN HECHO)
 ========================================================= */
+
 .instacart-btn {
   display: flex;
   flex-direction: column;
@@ -74,7 +75,7 @@ header {
   background-color: #ffd951;
   color: #001c1e;
 
-  padding: 14px 20px;
+  padding: 16px 20px;
   border-radius: 14px;
 
   text-decoration: none;
@@ -84,86 +85,66 @@ header {
   transition: 0.3s ease;
 }
 
+/* 🔥 LOGO */
 .instacart-btn img {
-  height: 55px;
-  width: auto; /* 🔥 evita deformación */
+  width: 70px;   /* 🔥 CONTROLAMOS POR WIDTH (NO HEIGHT) */
+  height: auto;
   display: block;
 }
 
+/* 🔥 TEXTO DEBAJO */
 .instacart-btn span {
   margin-top: 6px;
-  white-space: nowrap;
+  font-size: 1rem;
 }
 
+/* 🔥 HOVER */
 .instacart-btn:hover {
   background-color: #ffea72;
   transform: scale(1.05);
 }
 
 /* =========================================================
-   ===== RESPONSIVE HEADER =====
+   ===== DESKTOP (AQUÍ SE VE PRO)
+========================================================= */
+@media (min-width: 769px) {
+  .header-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .instacart-btn {
+    width: 180px; /* 🔥 BOTÓN MÁS GRANDE Y PROPORCIONADO */
+    padding: 18px;
+  }
+
+  .instacart-btn img {
+    width: 90px; /* 🔥 LOGO GRANDE DE VERDAD */
+  }
+
+  .instacart-btn span {
+    font-size: 1.05rem;
+  }
+}
+
+/* =========================================================
+   ===== MOBILE (SOLO LOGO PERO BIEN GRANDE)
 ========================================================= */
 @media (max-width: 768px) {
-  .header-contact {
-    font-size: 0.75rem;
-    padding: 6px 5px;
-    line-height: 1.2;
-  }
 
-  .header-content {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    padding: 10px 15px;
-  }
-
-  .header-logo img {
-    height: 55px;
-  }
-
-  .header-text {
-    font-size: 2rem;
-  }
-
-  /* 🔥 BOTÓN EN MOBILE */
   .instacart-btn {
-    padding: 8px;
+    padding: 10px;
   }
 
   .instacart-btn img {
-    height: 28px;
+    width: 40px; /* 🔥 NO pequeño */
   }
 
   .instacart-btn span {
-    display: none; /* solo logo */
+    display: none; /* 🔥 solo logo */
   }
 }
-
-@media (max-width: 400px) {
-  .header-text {
-    font-size: 1.2rem;
-  }
-
-  .header-logo img {
-    height: 45px;
-  }
-}
-
-/* 🔥 SOLO DESKTOP (AQUÍ SE ARREGLA TODO) */
-@media (min-width: 769px) {
-  .instacart-btn {
-    padding: 20px 26px;
-    font-size: 1.1rem;
-  }
-
-  .instacart-btn img {
-    height: 70px; /* 🔥 logo grande de verdad */
-  }
-
-  .instacart-btn span {
-    margin-top: 8px;
-  }
-}
-
 /* =========================================================
    ===== FLYERS =====
 ========================================================= */
