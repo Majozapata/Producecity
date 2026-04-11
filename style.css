@@ -63,9 +63,8 @@ header {
 }
 
 /* =========================================================
-   ===== BOTÓN INSTACART (FINAL BIEN HECHO)
+   ===== BOTÓN INSTACART
 ========================================================= */
-
 .instacart-btn {
   display: flex;
   flex-direction: column;
@@ -85,69 +84,71 @@ header {
   transition: 0.3s ease;
 }
 
-/* 🔥 LOGO */
 .instacart-btn img {
-  width: 70px;   /* 🔥 CONTROLAMOS POR WIDTH (NO HEIGHT) */
+  width: 70px;
   height: auto;
-  display: block;
 }
 
-/* 🔥 TEXTO DEBAJO */
 .instacart-btn span {
   margin-top: 6px;
-  font-size: 1rem;
 }
 
-/* 🔥 HOVER */
 .instacart-btn:hover {
   background-color: #ffea72;
   transform: scale(1.05);
 }
 
 /* =========================================================
-   ===== DESKTOP (AQUÍ SE VE PRO)
-========================================================= */
-/* =========================================================
-   🔥 FIX SOLO DESKTOP (NO TOCA MOBILE)
+   ===== DESKTOP
 ========================================================= */
 @media (min-width: 769px) {
 
-  .header-button {
-    display: flex;
-    justify-content: flex-end;
-  }
-
   .instacart-btn {
-    width: 200px; /* 🔥 hace que el botón crezca */
+    width: 200px; /* 🔥 botón más grande */
     padding: 20px;
   }
 
   .instacart-btn img {
-    width: 95px;  /* 🔥 logo grande real */
-    height: auto;
+    width: 95px; /* 🔥 logo grande */
   }
 
   .instacart-btn span {
     font-size: 1.1rem;
-    margin-top: 8px;
   }
 }
+
 /* =========================================================
-   ===== MOBILE (SOLO LOGO PERO BIEN GRANDE)
+   ===== MOBILE (NO SE ROMPE EL HEADER)
 ========================================================= */
 @media (max-width: 768px) {
-  .instacart-btn span {
-    display: none;
+
+  .header-content {
+    grid-template-columns: 1fr auto 1fr;
+    padding: 10px 15px;
   }
-}
+
+  .header-logo img {
+    height: 55px;
+  }
+
+  .header-text {
+    font-size: 2rem;
+  }
+
+  .instacart-btn {
+    padding: 6px;
+    width: auto; /* 🔥 NO rompe layout */
+  }
+
   .instacart-btn img {
-    width: 40px; /* 🔥 NO pequeño */
+    width: 38px; /* 🔥 visible pero no gigante */
   }
 
   .instacart-btn span {
     display: none; /* 🔥 solo logo */
   }
 }
+
 /* =========================================================
    ===== FLYERS =====
 ========================================================= */
@@ -242,13 +243,11 @@ footer {
 
 .sales-box h2 {
   font-size: 1.8rem;
-  margin-bottom: 10px;
 }
 
 .sales-box p {
   font-size: 1.2rem;
   color: #ffffff;
-  margin-bottom: 20px;
 }
 
 .sales-box input {
@@ -273,39 +272,4 @@ footer {
 .sales-box button:hover {
   background-color: #ffe066;
   transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-  .sales-box {
-    padding: 25px 20px;
-    width: 92%;
-  }
-
-  .sales-box h2 {
-    font-size: 1.4rem;
-  }
-
-  .sales-box p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .sales-box {
-    padding: 20px 15px;
-    width: 92%;
-  }
-
-  .sales-box h2 {
-    font-size: 1.2rem;
-  }
-
-  .sales-box p {
-    font-size: 0.9rem;
-  }
-
-  .sales-box input,
-  .sales-box button {
-    width: 100%;
-  }
 }
