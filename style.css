@@ -87,8 +87,10 @@ header {
 }
 
 .instacart-btn img {
-  height: 20px;
+  height: 22px;
+  max-height: 22px;
   width: auto;
+  object-fit: contain;
 }
 
 .instacart-btn span {
