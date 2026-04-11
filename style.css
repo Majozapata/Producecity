@@ -107,36 +107,39 @@ header {
 /* =========================================================
    ===== DESKTOP (AQUÍ SE VE PRO)
 ========================================================= */
+/* =========================================================
+   🔥 FIX SOLO DESKTOP (NO TOCA MOBILE)
+========================================================= */
 @media (min-width: 769px) {
+
   .header-button {
-    width: 100%;
     display: flex;
     justify-content: flex-end;
   }
 
   .instacart-btn {
-    width: 180px; /* 🔥 BOTÓN MÁS GRANDE Y PROPORCIONADO */
-    padding: 18px;
+    width: 200px; /* 🔥 hace que el botón crezca */
+    padding: 20px;
   }
 
   .instacart-btn img {
-    width: 90px; /* 🔥 LOGO GRANDE DE VERDAD */
+    width: 95px;  /* 🔥 logo grande real */
+    height: auto;
   }
 
   .instacart-btn span {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+    margin-top: 8px;
   }
 }
-
 /* =========================================================
    ===== MOBILE (SOLO LOGO PERO BIEN GRANDE)
 ========================================================= */
 @media (max-width: 768px) {
-
-  .instacart-btn {
-    padding: 10px;
+  .instacart-btn span {
+    display: none;
   }
-
+}
   .instacart-btn img {
     width: 40px; /* 🔥 NO pequeño */
   }
