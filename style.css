@@ -320,3 +320,19 @@ footer {
     width: 100%;
   }
 }
+/* 🔥 SOLO DESKTOP */
+@media (min-width: 769px) {
+  .instacart-btn {
+    padding: 16px 22px; /* 🔥 más grande */
+    font-size: 1.1rem;  /* 🔥 texto más visible */
+    border-radius: 14px;
+  }
+
+  .instacart-btn img {
+    height: 50px; /* 🔥 logo grande */
+  }
+
+  .instacart-btn span {
+    margin-top: 6px;
+  }
+}
