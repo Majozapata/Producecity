@@ -124,20 +124,20 @@ header {
     font-size: 2rem;
   }
 
-  /* 🔥 BOTÓN EN MOBILE */
+@media (max-width: 768px) {
   .instacart-btn {
-    padding: 8px;
+    padding: 6px;
   }
 
   .instacart-btn img {
-    height: 28px;
+    height: 40px; /* 🔥 antes 28px → ahora sí se ve bien */
+    transform: scale(1.2); /* 🔥 agranda visualmente sin deformar */
   }
 
   .instacart-btn span {
-    display: none; /* solo logo */
+    display: none;
   }
 }
-
 @media (max-width: 400px) {
   .header-text {
     font-size: 1.2rem;
@@ -151,16 +151,17 @@ header {
 /* 🔥 SOLO DESKTOP (AQUÍ SE ARREGLA TODO) */
 @media (min-width: 769px) {
   .instacart-btn {
-    padding: 20px 26px;
-    font-size: 1.1rem;
+    padding: 18px 22px;
+    gap: 4px; /* 🔥 controla espacio interno */
   }
 
   .instacart-btn img {
-    height: 70px; /* 🔥 logo grande de verdad */
+    height: 65px;
+    margin-bottom: 2px; /* 🔥 pega más el texto */
   }
 
   .instacart-btn span {
-    margin-top: 8px;
+    margin-top: 2px; /* 🔥 elimina espacio grande */
   }
 }
 
