@@ -123,11 +123,11 @@ header {
     line-height: 1.2;
   }
 
-  .header-content {
-    display: grid; /* 🔥 mantenemos tu diseño original */
-    grid-template-columns: 1fr auto 1fr;
-    padding: 10px 15px;
-  }
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr auto auto; /* 🔥 botón con más espacio */
+  gap: 20px;
+}
 
   .header-logo img {
     height: 55px;
