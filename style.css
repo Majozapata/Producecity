@@ -63,6 +63,7 @@ header {
 }
 
 /* ===== BOTÓN INSTACART ===== */
+/* ===== BOTÓN INSTACART (FIX REAL) ===== */
 .instacart-btn {
   display: flex;
   flex-direction: column;
@@ -72,33 +73,33 @@ header {
   background-color: #ffd951;
   color: #001c1e;
 
-  padding: 12px 18px; /* 🔥 más grande */
-  border-radius: 12px;
+  padding: 14px 20px;
+  border-radius: 14px;
 
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.95rem; /* 🔥 letra más visible */
+  font-size: 1rem;
 
   transition: 0.3s ease;
 }
 
-/* 🔥 LOGO MÁS GRANDE */
+/* 🔥 LOGO GRANDE DE VERDAD */
 .instacart-btn img {
-  height: 60px;
-  width: 60px;
-  object-fit: cover; /* 🔥 recorta el espacio vacío */
-}
+  height: 55px;
+  width: auto; /* 🔥 IMPORTANTE: NO fuerces width */
+  display: block;
 }
 
-/* 🔥 TEXTO DEBAJO */
+/* TEXTO */
 .instacart-btn span {
-  margin-top: 5px;
+  margin-top: 6px;
   white-space: nowrap;
 }
 
+/* HOVER */
 .instacart-btn:hover {
   background-color: #ffea72;
-  transform: scale(1.07);
+  transform: scale(1.05);
 }
 /* =========================================================
    ===== RESPONSIVE HEADER =====
