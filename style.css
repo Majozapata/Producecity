@@ -152,16 +152,16 @@ header {
 @media (min-width: 769px) {
   .instacart-btn {
     padding: 18px 22px;
-    gap: 4px; /* 🔥 controla espacio interno */
+    gap: 2px; /* 🔥 controla espacio interno */
   }
 
   .instacart-btn img {
-    height: 65px;
+    height: 50px;
     margin-bottom: 2px; /* 🔥 pega más el texto */
   }
 
   .instacart-btn span {
-    margin-top: 2px; /* 🔥 elimina espacio grande */
+    margin-top: 0px; /* 🔥 elimina espacio grande */
   }
 }
 
