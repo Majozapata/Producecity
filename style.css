@@ -84,9 +84,10 @@ header {
 
 /* 🔥 LOGO MÁS GRANDE */
 .instacart-btn img {
-  height: 60px; /* 🔥 aquí está el cambio fuerte */
-  width: auto;
-  display: block;
+  height: 45px;
+  width: 45px;
+  object-fit: cover; /* 🔥 recorta el espacio vacío */
+}
 }
 
 /* 🔥 TEXTO DEBAJO */
