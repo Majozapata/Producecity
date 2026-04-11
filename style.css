@@ -63,8 +63,9 @@ header {
 }
 
 /* =========================================================
-   ===== BOTÓN INSTACART
+   ===== BOTÓN INSTACART (FINAL PERFECTO)
 ========================================================= */
+
 .instacart-btn {
   display: flex;
   flex-direction: column;
@@ -84,13 +85,18 @@ header {
   transition: 0.3s ease;
 }
 
+/* LOGO */
 .instacart-btn img {
   width: 70px;
   height: auto;
+  display: block;
 }
 
+/* TEXTO */
 .instacart-btn span {
   margin-top: 6px;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .instacart-btn:hover {
@@ -99,31 +105,31 @@ header {
 }
 
 /* =========================================================
-   ===== DESKTOP
+   ===== DESKTOP (🔥 AQUÍ SE ARREGLA EL BOTÓN)
 ========================================================= */
 @media (min-width: 769px) {
 
   .instacart-btn {
-    width: 200px; /* 🔥 botón más grande */
+    width: 220px;          /* 🔥 botón más ancho */
     padding: 20px;
   }
 
   .instacart-btn img {
-    width: 95px; /* 🔥 logo grande */
+    width: 100px;          /* 🔥 logo grande real */
   }
 
   .instacart-btn span {
     font-size: 1.1rem;
+    margin-top: 8px;
   }
 }
 
 /* =========================================================
-   ===== MOBILE (NO SE ROMPE EL HEADER)
+   ===== MOBILE (🔥 NO ROMPE HEADER)
 ========================================================= */
 @media (max-width: 768px) {
 
   .header-content {
-    grid-template-columns: 1fr auto 1fr;
     padding: 10px 15px;
   }
 
@@ -135,17 +141,30 @@ header {
     font-size: 2rem;
   }
 
+  /* BOTÓN */
   .instacart-btn {
-    padding: 6px;
-    width: auto; /* 🔥 NO rompe layout */
+    padding: 10px;
   }
 
   .instacart-btn img {
-    width: 38px; /* 🔥 visible pero no gigante */
+    width: 55px;   /* 🔥 más grande (ANTES era muy pequeño) */
   }
 
   .instacart-btn span {
     display: none; /* 🔥 solo logo */
+  }
+}
+
+/* =========================================================
+   ===== EXTRA SMALL
+========================================================= */
+@media (max-width: 400px) {
+  .header-text {
+    font-size: 1.2rem;
+  }
+
+  .header-logo img {
+    height: 45px;
   }
 }
 
@@ -217,7 +236,7 @@ footer {
 }
 
 /* =========================================================
-   ===== WEEKLY SALES BOX =====
+   ===== WEEKLY SALES BOX
 ========================================================= */
 .weekly-sales {
   background-color: #f9f9f9;
@@ -243,11 +262,13 @@ footer {
 
 .sales-box h2 {
   font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 
 .sales-box p {
   font-size: 1.2rem;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .sales-box input {
@@ -272,4 +293,39 @@ footer {
 .sales-box button:hover {
   background-color: #ffe066;
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .sales-box {
+    padding: 25px 20px;
+    width: 92%;
+  }
+
+  .sales-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .sales-box p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sales-box {
+    padding: 20px 15px;
+    width: 92%;
+  }
+
+  .sales-box h2 {
+    font-size: 1.2rem;
+  }
+
+  .sales-box p {
+    font-size: 0.9rem;
+  }
+
+  .sales-box input,
+  .sales-box button {
+    width: 100%;
+  }
 }
