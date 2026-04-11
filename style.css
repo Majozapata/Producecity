@@ -65,56 +65,54 @@ header {
 /* ===== BOTÓN INSTACART ===== */
 .instacart-btn {
   display: flex;
-  flex-direction: column; /* 🔥 texto debajo del logo */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
   background-color: #ffd951;
   color: #001c1e;
 
-  padding: 8px 12px;
-  border-radius: 10px;
+  padding: 12px 18px; /* 🔥 más grande */
+  border-radius: 12px;
 
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.75rem;
+  font-weight: 700;
+  font-size: 0.95rem; /* 🔥 letra más visible */
 
   transition: 0.3s ease;
 }
 
 /* 🔥 LOGO MÁS GRANDE */
 .instacart-btn img {
-  height: 28px;
+  height: 40px; /* 🔥 aquí está el cambio fuerte */
   width: auto;
   display: block;
 }
 
 /* 🔥 TEXTO DEBAJO */
 .instacart-btn span {
-  margin-top: 3px;
+  margin-top: 5px;
   white-space: nowrap;
 }
 
-/* HOVER */
 .instacart-btn:hover {
   background-color: #ffea72;
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
-
 /* =========================================================
    ===== RESPONSIVE HEADER =====
 ========================================================= */
 @media (max-width: 768px) {
   .instacart-btn {
-    padding: 6px;
+    padding: 8px;
   }
 
   .instacart-btn img {
-    height: 24px;
+    height: 28px; /* 🔥 no tan pequeño */
   }
 
   .instacart-btn span {
-    display: none; /* 🔥 oculta texto */
+    display: none;
   }
 }
 @media (max-width: 768px) {
