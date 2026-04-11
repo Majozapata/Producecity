@@ -102,6 +102,38 @@ header {
   transform: scale(1.05);
 }
 
+.instacart-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  background-color: #ffd951;
+  color: #001c1e;
+
+  padding: 8px 14px;
+  border-radius: 10px;
+
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+
+  transition: 0.3s ease;
+}
+
+.instacart-btn img {
+  height: 18px;
+  width: auto;
+  display: block;
+}
+
+.instacart-btn span {
+  white-space: nowrap;
+}
+
+.instacart-btn:hover {
+  background-color: #ffea72;
+  transform: scale(1.05);
+}
 /* =========================================================
    ===== RESPONSIVE HEADER (🔥 FIX REAL) =====
 ========================================================= */
@@ -156,6 +188,16 @@ header {
   .instacart-btn span {
     display: block;
     text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .instacart-btn {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+
+  .instacart-btn img {
+    height: 16px;
   }
 }
 
