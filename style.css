@@ -16,6 +16,8 @@ body {
 /* =========================================================
    ===== HEADER =====
 ========================================================= */
+
+/* 🔹 Contact info bar */
 .header-contact {
   background-color: #00292b;
   text-align: center;
@@ -24,12 +26,14 @@ body {
   color: #dcdcdc;
 }
 
+/* 🔹 Main header */
 header {
   width: 100%;
   background-color: #151c25;
   color: #f5f5f5;
 }
 
+/* 🔹 Desktop layout */
 .header-content {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -44,6 +48,7 @@ header {
 
 .header-logo img {
   height: 90px;
+  width: auto;
   border-radius: 50%;
   border: 3px solid rgba(255, 215, 0, 0.7);
   box-shadow: 0 0 15px rgba(255, 215, 0, 0.5),
@@ -62,36 +67,31 @@ header {
   justify-content: flex-end;
 }
 
-/* =========================================================
-   ===== BOTÓN INSTACART (FIX FINAL) =====
-========================================================= */
+/* 🔥 BOTÓN INSTACART */
 .instacart-btn {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 8px;
 
   background-color: #ffd951;
   color: #001c1e;
 
-  padding: 14px 20px;
-  border-radius: 14px;
+  padding: 10px 18px;
+  border-radius: 10px;
 
   text-decoration: none;
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
 
   transition: 0.3s ease;
 }
 
 .instacart-btn img {
-  height: 55px;
-  width: auto; /* 🔥 evita deformación */
-  display: block;
+  height: 20px;
+  width: auto;
 }
 
 .instacart-btn span {
-  margin-top: 6px;
   white-space: nowrap;
 }
 
@@ -101,8 +101,9 @@ header {
 }
 
 /* =========================================================
-   ===== RESPONSIVE HEADER =====
+   ===== RESPONSIVE HEADER (🔥 FIX REAL) =====
 ========================================================= */
+
 @media (max-width: 768px) {
   .header-contact {
     font-size: 0.75rem;
@@ -110,57 +111,64 @@ header {
     line-height: 1.2;
   }
 
+  /* 🔥 CAMBIO CLAVE */
   .header-content {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .header-logo {
+    justify-content: center;
   }
 
   .header-logo img {
-    height: 55px;
+    height: 60px;
   }
 
   .header-text {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
   }
 
-  /* 🔥 BOTÓN EN MOBILE */
+  .header-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .instacart-btn {
-    padding: 8px;
+    width: 90%;
+    justify-content: center;
+    padding: 10px;
+    font-size: 0.85rem;
+    gap: 8px;
   }
 
   .instacart-btn img {
-    height: 28px;
+    height: 18px;
   }
 
   .instacart-btn span {
-    display: none; /* solo logo */
+    display: block;
+    text-align: center;
   }
 }
 
+/* 🔹 Extra small devices */
 @media (max-width: 400px) {
+  .header-contact {
+    font-size: 0.65rem;
+  }
+
   .header-text {
     font-size: 1.2rem;
   }
 
   .header-logo img {
-    height: 45px;
-  }
-}
-
-/* 🔥 SOLO DESKTOP (AQUÍ SE ARREGLA TODO) */
-@media (min-width: 769px) {
-  .instacart-btn {
-    padding: 20px 26px;
-    font-size: 1.1rem;
-  }
-
-  .instacart-btn img {
-    height: 70px; /* 🔥 logo grande de verdad */
-  }
-
-  .instacart-btn span {
-    margin-top: 8px;
+    height: 50px;
   }
 }
 
@@ -180,7 +188,7 @@ header {
   max-width: 2000px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: 0.5s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.8s ease;
 }
 
 .flyer-img:hover {
@@ -196,7 +204,7 @@ header {
 .show {
   opacity: 1;
   transform: translateY(0);
-  transition: 0.8s ease;
+  transition: all 0.8s ease-out;
 }
 
 /* =========================================================
@@ -204,6 +212,7 @@ header {
 ========================================================= */
 footer {
   margin-top: 40px;
+  width: 100%;
   background-color: #001c1e;
   color: white;
 }
@@ -211,6 +220,7 @@ footer {
 .payment-methods {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 25px;
   padding: 20px 0;
   background-color: #003B2F;
@@ -218,7 +228,9 @@ footer {
 
 .payment-logo {
   width: 80px;
-  transition: 0.3s ease;
+  height: auto;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
 }
 
 .payment-logo:hover {
@@ -238,42 +250,45 @@ footer {
   background-color: #f9f9f9;
   display: flex;
   justify-content: center;
-  padding: 30px 10px;
+  align-items: center;
+  padding: 30px 0;
 }
 
 .sales-box {
   background-color: #083d3c;
   color: #ffcc00;
   text-align: center;
-
-  padding: 40px 60px;
+  padding: 40px 80px;
   border-radius: 25px;
-
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
-
-  width: 90%;
-  max-width: 750px;
+  width: 85%;
+  max-width: 900px;
+  transition: all 0.4s ease;
   margin: 10px auto;
 }
 
+.sales-box:hover {
+  transform: scale(1.02);
+}
+
 .sales-box h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 1.5px;
 }
 
 .sales-box p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .sales-box input {
   padding: 12px;
-  width: 100%;
-  max-width: 320px;
+  width: 300px;
+  max-width: 90%;
   border-radius: 8px;
   border: none;
-  margin-bottom: 15px;
+  outline: none;
 }
 
 .sales-box button {
@@ -289,39 +304,4 @@ footer {
 .sales-box button:hover {
   background-color: #ffe066;
   transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-  .sales-box {
-    padding: 25px 20px;
-    width: 92%;
-  }
-
-  .sales-box h2 {
-    font-size: 1.4rem;
-  }
-
-  .sales-box p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .sales-box {
-    padding: 20px 15px;
-    width: 92%;
-  }
-
-  .sales-box h2 {
-    font-size: 1.2rem;
-  }
-
-  .sales-box p {
-    font-size: 0.9rem;
-  }
-
-  .sales-box input,
-  .sales-box button {
-    width: 100%;
-  }
 }
