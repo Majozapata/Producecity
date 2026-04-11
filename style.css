@@ -130,7 +130,7 @@ header {
   }
 
   .instacart-btn img {
-    height: 40px; /* 🔥 antes 28px → ahora sí se ve bien */
+    height: 30px; /* 🔥 antes 28px → ahora sí se ve bien */
     transform: scale(1.2); /* 🔥 agranda visualmente sin deformar */
   }
 
