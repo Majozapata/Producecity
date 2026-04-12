@@ -105,10 +105,7 @@ header {
 }
 
 /* =========================================================
-   ===== DESKTOP (🔥 AQUÍ SE ARREGLA EL BOTÓN)
-========================================================= */
-/* =========================================================
-   🔥 FIX SOLO DESKTOP (NO TOCA MOBILE)
+   🔥 FIX DESKTOP - BOTÓN HORIZONTAL
 ========================================================= */
 @media (min-width: 769px) {
 
@@ -120,28 +117,29 @@ header {
 
   .instacart-btn {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* 🔥 ahora horizontal */
     align-items: center;
     justify-content: center;
+    gap: 12px;
 
-    width: 180px;           /* 🔥 ancho controlado (NO gigante) */
-    padding: 18px 16px;
-
+    padding: 14px 24px;
     border-radius: 14px;
+
+    width: auto;          /* 🔥 ya no se expande raro */
+    max-width: 260px;     /* 🔥 límite elegante */
   }
 
   .instacart-btn img {
-    width: 90px;            /* 🔥 logo grande REAL */
+    width: 50px;          /* 🔥 logo grande pero proporcional */
     height: auto;
   }
 
   .instacart-btn span {
     font-size: 1.05rem;
-    margin-top: 6px;
-    text-align: center;
+    margin: 0;            /* 🔥 quitamos espacio vertical */
+    white-space: nowrap;  /* 🔥 evita que se rompa el texto */
   }
 }
-
 /* =========================================================
    ===== MOBILE (🔥 NO ROMPE HEADER)
 ========================================================= */
