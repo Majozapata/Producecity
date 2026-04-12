@@ -122,7 +122,7 @@ header {
     justify-content: center;
     gap: 12px;
 
-    padding: 14px 40px;
+    padding: 14px 24px;
     border-radius: 14px;
 
     width: auto;          /* 🔥 ya no se expande raro */
