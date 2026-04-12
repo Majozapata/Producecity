@@ -121,8 +121,8 @@ header {
   align-items: center;
   justify-content: center;
 
-  padding: 14px 60px; /* 🔥 esto lo hace horizontal */
-  gap: 15px;
+  padding: 10px 60px; /* 🔥 esto lo hace horizontal */
+  gap: 10px;
 
   border-radius: 14px;
 }
