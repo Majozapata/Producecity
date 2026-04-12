@@ -115,20 +115,18 @@ header {
     align-items: center;
   }
 
-  .instacart-btn {
-    display: flex;
-    flex-direction: row; /* 🔥 ahora horizontal */
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+.instacart-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
-    padding: 14px 24px;
-    border-radius: 14px;
+  padding: 14px 50px; /* 🔥 esto lo hace horizontal */
+  gap: 15px;
 
-    width: auto;          /* 🔥 ya no se expande raro */
-    max-width: 260px;     /* 🔥 límite elegante */
-  }
-
+  border-radius: 14px;
+}
+   
   .instacart-btn img {
     width: 50px;          /* 🔥 logo grande pero proporcional */
     height: auto;
