@@ -122,7 +122,7 @@ header {
     justify-content: center;
     gap: 12px;
 
-    padding: 14px 24px;
+    padding: 14px 40px;
     border-radius: 14px;
 
     width: auto;          /* 🔥 ya no se expande raro */
@@ -130,7 +130,7 @@ header {
   }
 
   .instacart-btn img {
-    width: 70px;          /* 🔥 logo grande pero proporcional */
+    width: 50px;          /* 🔥 logo grande pero proporcional */
     height: auto;
   }
 
