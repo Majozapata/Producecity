@@ -107,20 +107,38 @@ header {
 /* =========================================================
    ===== DESKTOP (🔥 AQUÍ SE ARREGLA EL BOTÓN)
 ========================================================= */
+/* =========================================================
+   🔥 FIX SOLO DESKTOP (NO TOCA MOBILE)
+========================================================= */
 @media (min-width: 769px) {
 
+  .header-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
   .instacart-btn {
-    width: 220px;          /* 🔥 botón más ancho */
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 180px;           /* 🔥 ancho controlado (NO gigante) */
+    padding: 18px 16px;
+
+    border-radius: 14px;
   }
 
   .instacart-btn img {
-    width: 100px;          /* 🔥 logo grande real */
+    width: 90px;            /* 🔥 logo grande REAL */
+    height: auto;
   }
 
   .instacart-btn span {
-    font-size: 1.1rem;
-    margin-top: 8px;
+    font-size: 1.05rem;
+    margin-top: 6px;
+    text-align: center;
   }
 }
 
