@@ -244,8 +244,8 @@ footer {
 }
 /* 🔥 IMAGEN COMBINADA */
 .payment-combined {
-  width: 600px;
-  max-width: 100%;
+  width: 350px;
+  max-width: 90%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -367,5 +367,10 @@ footer {
 @media (max-width: 480px) {
   .payment-combined {
     width: 180px; /* 🔥 más compacto en celulares pequeños */
+  }
+}
+@media (min-width: 769px) {
+  .payment-combined {
+    width: 500px; /* 🔥 aumenta este valor */
   }
 }
