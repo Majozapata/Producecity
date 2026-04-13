@@ -161,7 +161,7 @@ header {
   }
 
   .instacart-btn img {
-    width: 55px;   /* 🔥 más grande (ANTES era muy pequeño) */
+    width: 70px;   /* 🔥 más grande (ANTES era muy pequeño) */
   }
 
   .instacart-btn span {
@@ -237,7 +237,7 @@ footer {
 }
 
 .payment-logo {
-  width: 200px;
+  width: 500px;
   transition: 0.3s ease;
 }
 
@@ -247,7 +247,7 @@ footer {
 /* 🔥 IMAGEN COMBINADA */
 .payment-combined {
   width: 100%;        /* 🔥 ocupa todo el ancho */
-  max-width: 800px;   /* 🔥 límite elegante en desktop */
+  max-width: 500px;   /* 🔥 límite elegante en desktop */
   height: auto;
 
   display: block;
