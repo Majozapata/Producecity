@@ -231,7 +231,7 @@ footer {
   justify-content: center;
   align-items: center;
 
-  padding: 10px 0; /* 🔥 MÁS ANGOSTO (ANTES 20px) */
+  padding: 2px 0; /* 🔥 MÁS ANGOSTO (ANTES 20px) */
 
   background-color: #003B2F;
 }
