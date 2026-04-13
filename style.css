@@ -87,7 +87,7 @@ header {
 
 /* LOGO */
 .instacart-btn img {
-  width: 70px;
+  width: 60px;
   height: auto;
   display: block;
 }
@@ -128,7 +128,7 @@ header {
 }
    
   .instacart-btn img {
-    width: 70px;          /* 🔥 logo grande pero proporcional */
+    width: 80px;          /* 🔥 logo grande pero proporcional */
     height: auto;
   }
 
@@ -237,7 +237,7 @@ footer {
 }
 
 .payment-logo {
-  width: 500px;
+  width: 100px;
   transition: 0.3s ease;
 }
 
@@ -247,7 +247,7 @@ footer {
 /* 🔥 IMAGEN COMBINADA */
 .payment-combined {
   width: 100%;        /* 🔥 ocupa todo el ancho */
-  max-width: 500px;   /* 🔥 límite elegante en desktop */
+  max-width: 100px;   /* 🔥 límite elegante en desktop */
   height: auto;
 
   display: block;
