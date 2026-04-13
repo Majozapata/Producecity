@@ -242,6 +242,21 @@ footer {
 .payment-logo:hover {
   transform: scale(1.1);
 }
+/* 🔥 IMAGEN COMBINADA */
+.payment-combined {
+  width: 350px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+  filter: drop-shadow(0 0 6px rgba(0,0,0,0.3));
+  transition: transform 0.3s ease;
+}
+
+.payment-combined:hover {
+  transform: scale(1.05);
+}
 
 .map-container iframe {
   width: 100%;
@@ -341,5 +356,16 @@ footer {
   .sales-box input,
   .sales-box button {
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .payment-combined {
+    width: 220px; /* 🔥 tamaño perfecto mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-combined {
+    width: 180px; /* 🔥 más compacto en celulares pequeños */
   }
 }
