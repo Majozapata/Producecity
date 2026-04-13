@@ -371,6 +371,6 @@ footer {
 }
 @media (min-width: 769px) {
   .payment-combined {
-    width: 500px; /* 🔥 aumenta este valor */
+    width: 700px; /* 🔥 aumenta este valor */
   }
 }
