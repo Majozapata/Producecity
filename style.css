@@ -63,9 +63,8 @@ header {
 }
 
 /* =========================================================
-   ===== BOTÓN INSTACART (FINAL PERFECTO)
+   ===== BOTÓN INSTACART
 ========================================================= */
-
 .instacart-btn {
   display: flex;
   flex-direction: column;
@@ -85,64 +84,40 @@ header {
   transition: 0.3s ease;
 }
 
-/* LOGO */
 .instacart-btn img {
   width: 60px;
   height: auto;
-  display: block;
 }
 
-/* TEXTO */
 .instacart-btn span {
   margin-top: 6px;
-  font-size: 1rem;
   text-align: center;
 }
 
 .instacart-btn:hover {
   background-color: #ffea72;
-  transform: scale(1.05);
 }
 
-/* =========================================================
-   🔥 FIX DESKTOP - BOTÓN HORIZONTAL
-========================================================= */
+/* ===== DESKTOP BOTÓN ===== */
 @media (min-width: 769px) {
-
-  .header-button {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  .instacart-btn {
+    flex-direction: row;
+    padding: 10px 60px;
+    gap: 10px;
   }
 
-.instacart-btn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-  padding: 10px 60px; /* 🔥 esto lo hace horizontal */
-  gap: 10px;
-
-  border-radius: 14px;
-}
-   
   .instacart-btn img {
-    width: 80px;          /* 🔥 logo grande pero proporcional */
-    height: auto;
+    width: 80px;
   }
 
   .instacart-btn span {
-    font-size: 1.05rem;
-    margin: 0;            /* 🔥 quitamos espacio vertical */
-    white-space: nowrap;  /* 🔥 evita que se rompa el texto */
+    margin: 0;
+    white-space: nowrap;
   }
 }
-/* =========================================================
-   ===== MOBILE (🔥 NO ROMPE HEADER)
-========================================================= */
-@media (max-width: 768px) {
 
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
   .header-content {
     padding: 10px 15px;
   }
@@ -155,30 +130,12 @@ header {
     font-size: 2rem;
   }
 
-  /* BOTÓN */
-  .instacart-btn {
-    padding: 10px;
+  .instacart-btn span {
+    display: none;
   }
 
   .instacart-btn img {
-    width: 70px;   /* 🔥 más grande (ANTES era muy pequeño) */
-  }
-
-  .instacart-btn span {
-    display: none; /* 🔥 solo logo */
-  }
-}
-
-/* =========================================================
-   ===== EXTRA SMALL
-========================================================= */
-@media (max-width: 400px) {
-  .header-text {
-    font-size: 1.2rem;
-  }
-
-  .header-logo img {
-    height: 45px;
+    width: 70px;
   }
 }
 
@@ -198,177 +155,70 @@ header {
   max-width: 2000px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: 0.5s ease;
-}
-
-.flyer-img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-}
-
-.hidden {
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-.show {
-  opacity: 1;
-  transform: translateY(0);
-  transition: 0.8s ease;
 }
 
 /* =========================================================
-   ===== FOOTER ULTRA COMPACTO REAL
+   ===== FOOTER (ARREGLADO)
 ========================================================= */
 footer {
   margin-top: 50px;
   background-color: #001c1e;
-  color: white;
 }
 
-/* 🔥 CONTENEDOR */
+/* 🔥 BARRA VERDE ULTRA DELGADA */
 .payment-methods {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  padding: 10px 0; /* 🔥 mínimo absoluto */
+  padding: 4px 0; /* 🔥 DELGADO REAL */
   background-color: #003B2F;
-
-  overflow: hidden; /* 🔥 evita que crezca */
 }
 
-/* 🔥 IMAGEN CONTROLADA (CLAVE REAL) */
+/* 🔥 IMAGEN CONTROLADA */
 .payment-combined {
+  height: 45px; /* 🔥 controla altura REAL */
   width: auto;
-  height: 90px; /* 🔥 ESTO ES LO QUE LO HACE ANGOSTO DE VERDAD */
-
-  display: block;
-
   object-fit: contain;
 }
 
-/* =========================================================
-   ===== MOBILE
-========================================================= */
-@media (max-width: 768px) {
-  .payment-combined {
-    height: 35px; /* 🔥 ligeramente más pequeño */
-  }
-}
-
-@media (max-width: 480px) {
-  .payment-combined {
-    height: 50px; /* 🔥 ultra compacto */
-  }
-}
-/* =========================================================
-   ===== WEEKLY SALES BOX
-========================================================= */
-.weekly-sales {
-  background-color: #f9f9f9;
-  display: flex;
-  justify-content: center;
-  padding: 30px 10px;
-}
-
-.sales-box {
-  background-color: #083d3c;
-  color: #ffcc00;
-  text-align: center;
-
-  padding: 40px 60px;
-  border-radius: 25px;
-
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
-
-  width: 90%;
-  max-width: 750px;
-  margin: 10px auto;
-}
-
-.sales-box h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.sales-box p {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.sales-box input {
-  padding: 12px;
+/* 🔥 MAPA (RESTAURADO PERFECTO) */
+.map-container {
   width: 100%;
-  max-width: 320px;
-  border-radius: 8px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 350px;
   border: none;
-  margin-bottom: 15px;
+  display: block; /* 🔥 elimina espacios raros */
 }
 
-.sales-box button {
-  background-color: #ffcc00;
-  color: #083d3c;
-  border: none;
-  padding: 12px 25px;
-  font-weight: 600;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.sales-box button:hover {
-  background-color: #ffe066;
-  transform: scale(1.05);
-}
-
+/* =========================================================
+   ===== MOBILE FOOTER
+========================================================= */
 @media (max-width: 768px) {
-  .sales-box {
-    padding: 25px 20px;
-    width: 92%;
-  }
 
-  .sales-box h2 {
-    font-size: 1.4rem;
-  }
-
-  .sales-box p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .sales-box {
-    padding: 20px 15px;
-    width: 92%;
-  }
-
-  .sales-box h2 {
-    font-size: 1.2rem;
-  }
-
-  .sales-box p {
-    font-size: 0.9rem;
-  }
-
-  .sales-box input,
-  .sales-box button {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
   .payment-methods {
-    padding: 8px 0; /* 🔥 aún más compacto */
+    padding: 5px 0;
   }
 
   .payment-combined {
-    width: 95%;     /* 🔥 ocupa casi todo el ancho */
-    max-width: none;
+    height: 40px;
+  }
+
+  .map-container iframe {
+    height: 300px; /* 🔥 responsive */
   }
 }
 
 @media (max-width: 480px) {
+
   .payment-combined {
-    width: 92%;
+    height: 35px;
+  }
+
+  .map-container iframe {
+    height: 250px;
   }
 }
