@@ -221,7 +221,7 @@ header {
    ===== FOOTER ULTRA COMPACTO REAL
 ========================================================= */
 footer {
-  margin-top: 40px;
+  margin-top: 70px;
   background-color: #001c1e;
   color: white;
 }
@@ -241,7 +241,7 @@ footer {
 /* 🔥 IMAGEN CONTROLADA (CLAVE REAL) */
 .payment-combined {
   width: auto;
-  height: 100px; /* 🔥 ESTO ES LO QUE LO HACE ANGOSTO DE VERDAD */
+  height: 300px; /* 🔥 ESTO ES LO QUE LO HACE ANGOSTO DE VERDAD */
 
   display: block;
 
