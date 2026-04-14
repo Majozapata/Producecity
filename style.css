@@ -241,7 +241,7 @@ footer {
 /* 🔥 IMAGEN CONTROLADA (CLAVE REAL) */
 .payment-combined {
   width: auto;
-  height: 40px; /* 🔥 ESTO ES LO QUE LO HACE ANGOSTO DE VERDAD */
+  height: 100px; /* 🔥 ESTO ES LO QUE LO HACE ANGOSTO DE VERDAD */
 
   display: block;
 
@@ -259,7 +259,7 @@ footer {
 
 @media (max-width: 480px) {
   .payment-combined {
-    height: 30px; /* 🔥 ultra compacto */
+    height: 50px; /* 🔥 ultra compacto */
   }
 }
 /* =========================================================
