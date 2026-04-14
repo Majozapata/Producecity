@@ -291,7 +291,7 @@ footer {
 
 /* 🔥 IMAGEN CONTROLADA */
 .payment-combined {
-  height: 45px; /* 🔥 controla altura REAL */
+  height: 70px; /* 🔥 controla altura REAL */
   width: auto;
   object-fit: contain;
 }
