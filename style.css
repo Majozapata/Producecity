@@ -291,7 +291,7 @@ footer {
 }
 
 .payment-combined {
-  height: 70px; /* 🔥 más grande que antes */
+  height: 100px; /* 🔥 más grande que antes */
   width: auto;
   object-fit: cover; /* 🔥 evita deformación */
 }
