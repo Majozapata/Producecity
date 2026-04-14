@@ -232,7 +232,7 @@ footer {
   justify-content: center;
   align-items: center;
 
-  padding: 2px 0; /* 🔥 mínimo absoluto */
+  padding: 10px 0; /* 🔥 mínimo absoluto */
   background-color: #003B2F;
 
   overflow: hidden; /* 🔥 evita que crezca */
