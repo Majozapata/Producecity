@@ -279,21 +279,21 @@ footer {
   background-color: #001c1e;
 }
 
-/* 🔥 BARRA VERDE ULTRA DELGADA */
 .payment-methods {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  padding: 4px 0; /* 🔥 DELGADO REAL */
+  padding: 4px 0;
   background-color: #003B2F;
+
+  overflow: hidden; /* 🔥 CLAVE: recorta lo que se salga */
 }
 
-/* 🔥 IMAGEN CONTROLADA */
 .payment-combined {
-  height: 70px; /* 🔥 controla altura REAL */
+  height: 70px; /* 🔥 más grande que antes */
   width: auto;
-  object-fit: contain;
+  object-fit: cover; /* 🔥 evita deformación */
 }
 
 /* 🔥 MAPA (RESTAURADO PERFECTO) */
