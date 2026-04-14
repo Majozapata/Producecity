@@ -218,7 +218,7 @@ header {
 }
 
 /* =========================================================
-   ===== FOOTER =====
+   ===== FOOTER (ULTRA COMPACTO + RESPONSIVE)
 ========================================================= */
 footer {
   margin-top: 40px;
@@ -226,28 +226,21 @@ footer {
   color: white;
 }
 
+/* 🔥 CONTENEDOR VERDE MÁS ANGOSTO */
 .payment-methods {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  padding: 2px 0; /* 🔥 MÁS ANGOSTO (ANTES 20px) */
+  padding: 4px 0; /* 🔥 ULTRA ANGOSTO */
 
   background-color: #003B2F;
 }
 
-.payment-logo {
-  width: 100px;
-  transition: 0.3s ease;
-}
-
-.payment-logo:hover {
-  transform: scale(1.1);
-}
-/* 🔥 IMAGEN COMBINADA */
+/* 🔥 IMAGEN GRANDE Y PROPORCIONAL */
 .payment-combined {
-  width: 100%;        /* 🔥 ocupa todo el ancho */
-  max-width: 100px;   /* 🔥 límite elegante en desktop */
+  width: 100%;
+  max-width: 600px; /* 🔥 controla tamaño en desktop */
   height: auto;
 
   display: block;
@@ -256,16 +249,33 @@ footer {
   filter: drop-shadow(0 0 6px rgba(0,0,0,0.3));
 }
 
-.payment-combined:hover {
-  transform: scale(1.05);
-}
-
+/* 🔥 MAPA */
 .map-container iframe {
   width: 100%;
   height: 350px;
   border: none;
 }
 
+/* =========================================================
+   ===== MOBILE
+========================================================= */
+@media (max-width: 768px) {
+
+  .payment-methods {
+    padding: 6px 0; /* 🔥 sigue compacto pero no aplastado */
+  }
+
+  .payment-combined {
+    width: 95%;   /* 🔥 ocupa casi todo el ancho */
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-combined {
+    width: 92%;
+  }
+}
 /* =========================================================
    ===== WEEKLY SALES BOX
 ========================================================= */
