@@ -63,6 +63,120 @@ header {
 }
 
 /* =========================================================
+   ===== WEEKLY SALES BOX (ORIGINAL + RESPONSIVE PERFECTO)
+========================================================= */
+
+.weekly-sales {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+/* 🔥 DESKTOP (como lo querías originalmente) */
+.sales-box {
+  background-color: #083d3c;
+  color: #ffcc00;
+  text-align: center;
+
+  padding: 40px 80px;
+  border-radius: 25px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+
+  width: 85%;
+  max-width: 900px;
+
+  margin: 10px auto;
+}
+
+.sales-box h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.sales-box p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.sales-box input {
+  padding: 12px;
+  width: 300px;
+  max-width: 90%;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.sales-box button {
+  background-color: #ffcc00;
+  color: #083d3c;
+  border: none;
+  padding: 12px 25px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sales-box button:hover {
+  background-color: #ffe066;
+  transform: scale(1.05);
+}
+
+/* =========================================================
+   ===== TABLET
+========================================================= */
+@media (max-width: 768px) {
+
+  .weekly-sales {
+    padding: 25px 10px;
+  }
+
+  .sales-box {
+    padding: 30px 25px;
+    width: 92%;
+  }
+
+  .sales-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .sales-box p {
+    font-size: 1.1rem;
+  }
+
+  .sales-box input {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* =========================================================
+   ===== MOBILE
+========================================================= */
+@media (max-width: 480px) {
+
+  .sales-box {
+    padding: 25px 15px;
+    width: 94%;
+  }
+
+  .sales-box h2 {
+    font-size: 1.3rem;
+  }
+
+  .sales-box p {
+    font-size: 0.95rem;
+  }
+
+  .sales-box input,
+  .sales-box button {
+    width: 100%;
+  }
+}
+/* =========================================================
    ===== BOTÓN INSTACART
 ========================================================= */
 .instacart-btn {
