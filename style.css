@@ -250,7 +250,7 @@ header {
 
 @media (max-width: 768px) {
   .instacart-btn img {
-    width: 95px; /* 🔥 más grande sin crecer botón */
+    width: 80px; /* 🔥 más grande sin crecer botón */
   }
 }
 
