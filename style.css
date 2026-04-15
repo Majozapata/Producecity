@@ -216,12 +216,12 @@ header {
 @media (min-width: 769px) {
   .instacart-btn {
     flex-direction: row;
-    padding: 10px 60px;
+    padding: 6px 40px; /* 🔥 reduces altura del botón */
     gap: 10px;
   }
 
   .instacart-btn img {
-    width: 80px;
+    width: 110px; /* 🔥 logo mucho más grande */
   }
 
   .instacart-btn span {
@@ -248,8 +248,9 @@ header {
     display: none;
   }
 
+@media (max-width: 768px) {
   .instacart-btn img {
-    width: 70px;
+    width: 95px; /* 🔥 más grande sin crecer botón */
   }
 }
 
