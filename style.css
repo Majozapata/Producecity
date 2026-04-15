@@ -63,7 +63,7 @@ header {
 }
 
 /* =========================================================
-   ===== WEEKLY SALES BOX (ORIGINAL + RESPONSIVE PERFECTO)
+   ===== WEEKLY SALES BOX
 ========================================================= */
 
 .weekly-sales {
@@ -73,20 +73,15 @@ header {
   padding: 30px 0;
 }
 
-/* 🔥 DESKTOP (como lo querías originalmente) */
 .sales-box {
   background-color: #083d3c;
   color: #ffcc00;
   text-align: center;
-
   padding: 40px 80px;
   border-radius: 25px;
-
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
-
   width: 85%;
   max-width: 900px;
-
   margin: 10px auto;
 }
 
@@ -129,7 +124,6 @@ header {
    ===== TABLET
 ========================================================= */
 @media (max-width: 768px) {
-
   .weekly-sales {
     padding: 25px 10px;
   }
@@ -157,7 +151,6 @@ header {
    ===== MOBILE
 ========================================================= */
 @media (max-width: 480px) {
-
   .sales-box {
     padding: 25px 15px;
     width: 94%;
@@ -176,6 +169,7 @@ header {
     width: 100%;
   }
 }
+
 /* =========================================================
    ===== BOTÓN INSTACART
 ========================================================= */
@@ -184,17 +178,13 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   background-color: #ffd951;
   color: #001c1e;
-
   padding: 16px 16px;
   border-radius: 14px;
-
   text-decoration: none;
   font-weight: 700;
   font-size: 1rem;
-
   transition: 0.3s ease;
 }
 
@@ -212,16 +202,16 @@ header {
   background-color: #ffea72;
 }
 
-/* ===== DESKTOP BOTÓN ===== */
+/* ===== DESKTOP ===== */
 @media (min-width: 769px) {
   .instacart-btn {
     flex-direction: row;
-    padding: 6px 40px; /* 🔥 reduces altura del botón */
+    padding: 6px 40px;
     gap: 10px;
   }
 
   .instacart-btn img {
-    width: 110px; /* 🔥 logo mucho más grande */
+    width: 110px;
   }
 
   .instacart-btn span {
@@ -248,9 +238,8 @@ header {
     display: none;
   }
 
-@media (max-width: 768px) {
   .instacart-btn img {
-    width: 80px; /* 🔥 más grande sin crecer botón */
+    width: 80px;
   }
 }
 
@@ -273,7 +262,7 @@ header {
 }
 
 /* =========================================================
-   ===== FOOTER (ARREGLADO)
+   ===== FOOTER
 ========================================================= */
 footer {
   margin-top: 50px;
@@ -284,20 +273,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-
   padding: 4px 0;
   background-color: #003B2F;
-
-  overflow: hidden; /* 🔥 CLAVE: recorta lo que se salga */
+  overflow: hidden;
 }
 
 .payment-combined {
-  height: 100px; /* 🔥 más grande que antes */
+  height: 100px;
   width: auto;
-  object-fit: cover; /* 🔥 evita deformación */
+  object-fit: cover;
 }
 
-/* 🔥 MAPA (RESTAURADO PERFECTO) */
+/* ===== MAPA ===== */
 .map-container {
   width: 100%;
 }
@@ -306,14 +293,11 @@ footer {
   width: 100%;
   height: 350px;
   border: none;
-  display: block; /* 🔥 elimina espacios raros */
+  display: block;
 }
 
-/* =========================================================
-   ===== MOBILE FOOTER
-========================================================= */
+/* ===== MOBILE FOOTER ===== */
 @media (max-width: 768px) {
-
   .payment-methods {
     padding: 5px 0;
   }
@@ -323,12 +307,11 @@ footer {
   }
 
   .map-container iframe {
-    height: 300px; /* 🔥 responsive */
+    height: 300px;
   }
 }
 
 @media (max-width: 480px) {
-
   .payment-combined {
     height: 35px;
   }
