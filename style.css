@@ -282,7 +282,7 @@ footer {
   height: 45px; /* 🔥 MISMA altura original del footer */
   width: auto;
 
-  transform: scale(1.8); /* 🔥 agranda visualmente */
+  transform: scale(2); /* 🔥 agranda visualmente */
   transform-origin: center; /* 🔥 se expande desde el centro */
 }
 
