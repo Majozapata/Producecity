@@ -65,7 +65,6 @@ header {
 /* =========================================================
    ===== WEEKLY SALES BOX
 ========================================================= */
-
 .weekly-sales {
   background-color: #f9f9f9;
   display: flex;
@@ -278,11 +277,12 @@ footer {
   overflow: hidden;
 }
 
+/* 🔥 SOLO AQUÍ ESTÁ EL AJUSTE */
 .payment-combined {
-  height: auto; /* 🔥 quitamos la limitación */
-  width: 600px; /* 🔥 hacemos la imagen más grande */
-  max-height: 100px; /* 🔥 respeta la altura del footer */
-  object-fit: contain; /* 🔥 evita recorte feo */
+  height: auto;
+  width: 600px;
+  max-height: 100px;
+  object-fit: contain;
 }
 
 /* ===== MAPA ===== */
@@ -304,7 +304,9 @@ footer {
   }
 
   .payment-combined {
-    height: 40px;
+    width: 300px;
+    height: auto;
+    max-height: 100px;
   }
 
   .map-container iframe {
@@ -314,7 +316,9 @@ footer {
 
 @media (max-width: 480px) {
   .payment-combined {
-    height: 35px;
+    width: 250px;
+    height: auto;
+    max-height: 100px;
   }
 
   .map-container iframe {
