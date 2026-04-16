@@ -280,7 +280,7 @@ footer {
 /* 🔥 SOLO AQUÍ ESTÁ EL AJUSTE */
 .payment-combined {
   height: auto;
-  width: 600px;
+  width: 70px;
   max-height: 100px;
   object-fit: contain;
 }
