@@ -277,13 +277,12 @@ footer {
   overflow: hidden;
 }
 
-/* 🔥 SOLO AQUÍ ESTÁ EL AJUSTE */
+/* 🔥 AJUSTE CORRECTO (ÚNICO CAMBIO) */
 .payment-combined {
-  height: 45px; /* 🔥 MISMA altura original del footer */
+  height: 45px;
   width: auto;
-
-  transform: scale(2); /* 🔥 agranda visualmente */
-  transform-origin: center; /* 🔥 se expande desde el centro */
+  transform: scale(1.8);
+  transform-origin: center;
 }
 
 /* ===== MAPA ===== */
@@ -305,9 +304,7 @@ footer {
   }
 
   .payment-combined {
-    width: 300px;
-    height: auto;
-    max-height: 100px;
+    transform: scale(1.4);
   }
 
   .map-container iframe {
@@ -317,9 +314,7 @@ footer {
 
 @media (max-width: 480px) {
   .payment-combined {
-    width: 250px;
-    height: auto;
-    max-height: 100px;
+    transform: scale(1.2);
   }
 
   .map-container iframe {
