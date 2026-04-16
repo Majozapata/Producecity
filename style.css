@@ -279,9 +279,10 @@ footer {
 }
 
 .payment-combined {
-  height: 100px;
-  width: auto;
-  object-fit: cover;
+  height: auto; /* 🔥 quitamos la limitación */
+  width: 300px; /* 🔥 hacemos la imagen más grande */
+  max-height: 100px; /* 🔥 respeta la altura del footer */
+  object-fit: contain; /* 🔥 evita recorte feo */
 }
 
 /* ===== MAPA ===== */
