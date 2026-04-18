@@ -277,22 +277,15 @@ footer {
   overflow: hidden;
 }
 
-/* 🔥 AJUSTE CORRECTO (ÚNICO CAMBIO) */
+/* 🔥 AJUSTE (el tuyo, intacto) */
 .payment-combined {
   height: 45px;
   width: auto;
-
-  transform: scale(2.6); /* 🔥 tamaño ideal desktop */
+  transform: scale(2.6);
   transform-origin: center;
-
-  display: block; /* 🔥 evita desalineaciones */
+  display: block;
 }
 
-.payment-methods {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 /* ===== MAPA ===== */
 .map-container {
   width: 100%;
@@ -305,15 +298,18 @@ footer {
   display: block;
 }
 
-/* ===== MOBILE FOOTER ===== */
+/* ===== MOBILE FOOTER (CORREGIDO) ===== */
 @media (max-width: 768px) {
   .payment-methods {
     padding: 5px 0;
   }
 
-@media (max-width: 768px) {
   .payment-combined {
     transform: scale(1.5);
+  }
+
+  .map-container iframe {
+    height: 300px;
   }
 }
 
@@ -321,13 +317,6 @@ footer {
   .payment-combined {
     transform: scale(1.2);
   }
-}
-
-  .map-container iframe {
-    height: 300px;
-  }
-}
-
 
   .map-container iframe {
     height: 250px;
