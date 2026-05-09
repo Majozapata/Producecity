@@ -386,3 +386,27 @@ footer {
   }
 
 }
+/* =========================================================
+   ===== HEADER RESPONSIVE FIX
+========================================================= */
+@media (max-width: 768px) {
+
+  .header-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .header-logo {
+    justify-content: center;
+  }
+
+  .header-button {
+    align-items: center;
+  }
+
+  .external-btn {
+    max-width: 220px;
+  }
+
+}
